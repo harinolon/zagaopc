@@ -1,4 +1,4 @@
-<nav style="width: 100%; background-color: beige;" [class.fixed]="navbarFixed">
+<nav style="width: 100%; background-color: beige;">
    <div class="container" >
       <a class="oneList" [routerLink]="['']">Zaga</a>
       <a class="listStyle" *ngFor="let list of menuList" [routerLink]="[list.link]">{{list.name}}</a>
