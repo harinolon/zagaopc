@@ -1,0 +1,10 @@
+    
+<mdb-carousel [controls]="true" [indicators]="true" [keyboard]="true" [interval]="4000" [ride]="true"  [animation]="'fade'" >
+  <mdb-carousel-item *ngFor="let slide of slides" >
+    <img src="{{ slide.img }}" class="bg" alt="" width="100%">
+    <div class="carousel-caption d-none d-md-block"  >
+      <h1 [style]="{color:slide.color}" class="title" >{{slide.title}}</h1>
+      <p [style]="{color:slide.color}" class="para" >{{slide.text}}</p>
+    </div>
+  </mdb-carousel-item>
+</mdb-carousel>

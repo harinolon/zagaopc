@@ -1,0 +1,11 @@
+<!-- <div class="container"  >
+       <a class="oneList" [routerLink]="['']">ZAGA</a>
+       <a *ngFor="let menu of menuList" class="listStyle" [href]="menu.link">{{menu.name}}</a>
+       
+</div> -->
+<nav style="width: 100%; background-color: beige;" appScroll >
+   <div class="container" >
+      <a class="oneList" [routerLink]="['']">Zaga</a>
+      <a class="listStyle" *ngFor="let list of menuList" [routerLink]="[list.link]">{{list.name}}</a>
+   </div>
+</nav>
