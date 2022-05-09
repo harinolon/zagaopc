@@ -64,17 +64,25 @@
    /* height: 2px; */
  }
 
- .fixed {
-   position: stick;
-   background-color: orange;
-  //  width: 100%;
-   transition: 0.2s linear;
-   top: 0px;
- }
+//  .fixed {
+//    position: stick;
+//    background-color: orange;
+//   //  width: 100%;
+//    transition: 0.2s linear;
+//    top: 0px;
+//  }
 
- .noFixed {
-   position: static;
-   transition: 0.2s linear;
-   top: -50px;
- }
+//  .noFixed {
+//    position: static;
+//    transition: 0.2s linear;
+//    top: -50px;
+//  }
+
+.fixed {
+  position: fixed;
+  background-color: #C40233;
+  width: 100%;
+  z-index: 1;
+  
+}
  

@@ -43,7 +43,7 @@ export class MenuItemsComponent implements OnInit {
       enabled: true
     }
   ];
-  // navbarFixed: boolean = false;
+  navbarFixed: boolean = false;
 
   constructor() { }
 
@@ -67,18 +67,20 @@ export class MenuItemsComponent implements OnInit {
   //   }
   // }
 
-  @HostBinding('class.fixed')
-  navbarFixed!: boolean;
+  // @HostBinding('class.fixed')
+  // navbarFixed!: boolean;
 
-  @HostListener('window:scroll') onScroll() {
-    if (window.scrollY >= 50) {
-      console.log(window.scrollY)
-      this.navbarFixed = true;
-    }
-    else {
-      this.navbarFixed = false;
-    }
-  }
+  // @HostListener('window:scroll') onScroll() {
+  //   if (window.scrollY >= 50) {
+  //     console.log(window.scrollY)
+  //     this.navbarFixed = true;
+  //   }
+  //   else {
+  //     this.navbarFixed = false;
+  //   }
+  // }
+
+
 
   //add a functionality like if enabled is true, then add into the menu list array...
 }
