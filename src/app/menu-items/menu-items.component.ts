@@ -43,7 +43,7 @@ export class MenuItemsComponent implements OnInit {
       enabled: true
     }
   ];
-  navbarFixed: boolean = false;
+  navbarFixed: boolean = true;
 
   constructor() { }
 
