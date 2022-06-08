@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+import { StickyHeaderModule, NavbarModule } from 'angular-bootstrap-md'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,9 +33,11 @@ import { ContactComponent } from './tabComponents/contact/contact.component';
     BrowserModule,
     AppRoutingModule,
     SlickCarouselModule,
-    MdbCarouselModule
+    MdbCarouselModule,
+    StickyHeaderModule,
+    NavbarModule
   ],
-  providers: [],
+  providers: [MenuItemsComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
