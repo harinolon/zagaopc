@@ -1,0 +1,132 @@
+.imgStyle1 {
+   width: 765px;
+   height: 716px;
+   border-bottom-right-radius: 5px;
+}
+
+.imgStyle2 {
+   width: 765px;
+   height: 716px;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+}
+
+.imgStyle3 {
+   width: 765px;
+   height: 716px;
+   border-bottom-right-radius: 5px;
+   border-top-right-radius: 5px;
+}
+
+.aboutContainer {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.textContent {
+   width: 50%;
+   padding: 20px;
+}
+
+.slide4 h2 {
+   margin-bottom: 3rem;
+   margin-top: 3rem;
+   margin-left: 1rem;     
+ }
+
+.photoStyle {
+   height: 300px;
+   width: 300px;
+   // border-width: 2px;
+   border-style: dashed;
+   border-color: #000;
+   object-fit: contain;
+}
+
+.name {
+   width: 200px;
+   height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-style: dashed;
+   border-color: #000;
+   background-color: #000;
+}
+
+.nameBox {
+  position: absolute;
+  background-color: black;
+  color: white;
+}
+
+// //Slide2 styles
+// .services {
+//    // background: #000000;
+//    color: #fff;
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: center;
+//    align-items: center;
+//    height: 100%;
+//    // padding: 5rem 0;
+//  }
+ 
+
+ 
+//  .services__wrapper {
+//    display: grid;
+//    grid-template-columns: 1fr 1fr;
+//    grid-template-rows: 1fr;
+//  }
+ 
+//  .services__card {
+//    display: flex;
+//    flex-direction: column;
+//    margin: 5px;
+//    height: 525px;
+//    width: 600px;
+//    border-radius: 4px;
+//    justify-content: center;
+//    // background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+//    background-color: grey;
+//    color: #fff;
+//    transition: 0.3s ease-in;
+//  }
+ 
+//  .services__card:nth-child(2) {
+//    // background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+//    background-color: grey;
+//    color: #fff;
+//  }
+
+ 
+//  .services__card h2 {
+//    text-align: center;
+//  }
+ 
+//  .services__card p {
+//    text-align: center;
+//    margin-top: 25px;
+//    font-size: 20px;
+//  }
+
+ 
+//  .services__card:hover {
+//    cursor: pointer;
+//    transform: scale(1.075);
+//    transition: 0.3s ease-in;
+//  }
+ 
+//  @media screen and (max-width: 1300px) {
+//    .services__wrapper {
+//      grid-template-columns: 1fr;
+//    }
+//  }
+ 
+//  @media screen and (max-width: 768px) {
+//    .services__wrapper {
+//      grid-template-columns: 1fr;
+//    }
+//  }
