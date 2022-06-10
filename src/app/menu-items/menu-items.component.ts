@@ -34,7 +34,7 @@ export class MenuItemsComponent implements OnInit {
     },
     {
       name: 'Careers',
-      link: 'careers',
+      link: 'career',
       enabled: true
     },
     {

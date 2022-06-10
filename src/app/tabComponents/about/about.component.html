@@ -43,9 +43,17 @@
    <!-- slide 3 -->
    <section class="slide4"  >
       <h2>OUR DEVELOPMENT EXPERTS</h2>
-      <div>
-         <img class="photoStyle" src="../../../assets/pexels-pixabay-60504.jpg" alt="ImageNotFound" />
-         <div class="nameBox" ><h2 class="name" >Hariharan</h2></div>
+      <div class="gridContainer" >
+         <a class="overallContainer" *ngFor="let users of expertDetails" [href]="users.linkedInUrl" target="_blank" >
+            <div class="photoContainer" >
+               <img class="photoStyle" [src]="users.imageUrl"  alt="ImageNotFound" />
+               <div class="nameBox" >
+                  <h2 class="name" >{{users.name}}</h2>
+               </div>
+            </div>
+            <p class="role" >{{users.title}}</p>
+            <span class="shortMessage" >View LinkedIn Page</span>
+         </a>
       </div>
    </section>
 </div>
