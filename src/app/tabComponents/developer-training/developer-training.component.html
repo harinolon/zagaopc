@@ -1,1 +1,20 @@
-<p>developer-training works!</p>
+<section class="container" >
+   <div class="firstContainer" >
+      <div>
+         <img class="imgStyle3" src="../../../assets/pngegg.png" alt="ImageNotFound" />
+      </div>
+      <div class="textContent" >
+         <h3 style="color: red;" >DEVELOPER CERTIFICATION</h3>
+         <h5>Certifying with Red Hat can help individuals, teams, and organizations validate the knowledge needed to stay ahead of the technology curve. Whether you’re looking to take the next step in your career or trying to fill skills gaps in your company, we have certifications and exams that match your needs.</h5>
+      </div>
+   </div>
+   <div class="services" >
+      <div class="services__wrapper">
+         <a class="services__card" *ngFor="let services of servicesList" [routerLink]="['/certification']" [state]="{data:{name:services.name,description:services.description,offered: services.offeredBy,keyPoints: keyPoints}}" >
+             <h2 style="margin-top: 40px;" >{{services.name}}</h2>
+             <p style="margin-top: 30px;" >{{services.description}}</p>
+             <!-- <span class="services__btn"><a>View the Course <i class="fa-solid fa-arrow-right"></i></a></span> -->
+         </a>
+     </div>
+   </div>
+</section>

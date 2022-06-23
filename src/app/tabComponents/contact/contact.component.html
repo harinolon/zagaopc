@@ -1,1 +1,64 @@
-<p>contact works!</p>
+<section class="contactContainer" >
+   <p>GET IN TOUCH</p>
+   <div class="boxContainer" >
+      <div style="width: 30%;" >
+      <h2 style="padding-bottom: 70px;">Let's Build something<br> Brilliant Together!</h2>
+   <div class="details" >
+      <h3 style="margin-top: -15px;" >Office Locations</h3>
+      <p>Headquarter</p>
+      <div class="location" >
+         <img class="imgStyle" src="../../../assets/pexels-fauxels-3182773.jpg" alt="noImageFound"><p>663 Texas USA.</p>
+      </div>
+      <div class="borderStyle" ></div>
+      <h3 style="margin-top: 30px;">Phone Numbers</h3>
+      <div class="location" >
+         <i style="margin-right: 10px;margin-top: 6px;" class="fa-solid fa-phone"></i><p>9944487742</p>
+      </div>
+      <div class="borderStyle" ></div>
+      <h3 style="margin-top: 30px;">Say Hello!</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias doloribus.</p>
+      <div class="location" >
+        
+         <i style="margin-right: 10px;margin-top: 6px;" class="fa-solid fa-envelope"></i><p>hariduke001@gmail.com</p>
+      </div>
+   </div>
+   </div>
+   <div class="whiteBox" >
+      <form [formGroup]="contactForm" (submit)="onSubmit()" >
+         <p>
+            <mat-form-field style="width: 30%;margin: 5% 0 3% 10%" appearance="fill">
+              <mat-label>First Name</mat-label>
+              <input matInput placeholder="Enter your First Name" required formControlName="firstname" >
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              <mat-error>Enter your FirstName</mat-error>
+            </mat-form-field>
+            <mat-form-field style="width: 30%;margin-left: 10%;" appearance="fill">
+               <mat-label>Last Name</mat-label>
+               <input matInput placeholder="Enter your Last Name" required formControlName="lastname" >
+               <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+               <mat-error>Enter your Last Name</mat-error>
+             </mat-form-field>
+          </p>
+            <p>
+               <mat-form-field style="width: 30%;margin-left: 10%;" appearance="fill">
+                  <mat-label>Email</mat-label>
+                  <input matInput placeholder="Enter your Email" required formControlName="email" >
+                  <mat-icon matSuffix>mail_outline</mat-icon>
+                  <mat-error>Enter your Email</mat-error>
+                </mat-form-field>
+            </p>
+            <p>
+               <mat-form-field style="width: 30%;margin: 3% 0 3% 10%" appearance="fill">
+                  <mat-label>Want to Say something!</mat-label>
+                  <textarea matInput required formControlName="message" ></textarea>
+                  <mat-icon matSuffix>info_outline</mat-icon>
+                  <mat-error>Enter your Message</mat-error>
+                </mat-form-field>
+            </p>
+            <p >
+               <button mat-raised-button color="primary" style="width:30%;margin-left: 30%;font-size: 1rem;" [disabled]="!contactForm.valid" >Send</button>
+            </p>
+         </form>
+   </div>
+   </div>
+</section>

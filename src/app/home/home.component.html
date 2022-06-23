@@ -1,5 +1,5 @@
 <section>
-  <mdb-carousel [controls]="true" [indicators]="true" [keyboard]="true" [interval]="4000" [ride]="true"  [animation]="'fade'" >
+  <mdb-carousel [controls]="true" [indicators]="true" [keyboard]="true" [interval]="4000" [pause]="false"  [animation]="'fade'" >
     <mdb-carousel-item *ngFor="let slide of slides" >
       <img src="{{ slide.img }}" class="bg" alt="" width="100%">
       <div class="carousel-caption d-none d-md-block"  >

@@ -1,0 +1,21 @@
+<div>
+   <section class="certificationContainer" >
+      <div>
+         <div class="textContent" >
+            <h1 >{{certificationDetails.name}}</h1>
+            <h6 style="margin-top: 10px;">{{certificationDetails.description}}</h6>
+            <button class="btn" style="background-color: #DC143C;color: #fff;margin-top: 10px;" >Enroll Now</button>
+         </div>
+      </div>
+      <div style="margin-top: 40px;color:#fff;width: 50%;" >
+         <h3>Offered By</h3>
+         <h1>{{certificationDetails.offered}}</h1>
+      </div>
+   </section>
+
+<!-- About Section -->
+<section class="infoContainer" >
+   <h4 style="color: #000;" >ABOUT</h4>
+   <p *ngFor="let points of keyPoints" ><i class="fa-solid fa-check" style="color: green;" ></i> {{points.point}}</p>
+</section>
+</div>
