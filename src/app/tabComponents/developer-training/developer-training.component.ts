@@ -12,19 +12,22 @@ export class DeveloperTrainingComponent implements OnInit {
       name: 'Mobile App Developement with IOT',
       description: 'Perform the core system administration skills required in Red Hat Enterprise Linux environments.',
       offeredBy: 'ZAGA',
-      enabled: true
+      enabled: true,
+      category: 'developer-training'
     },
     {
       name: 'Web App Developement using Latest Technologies',
       description: 'Create, configure, and manage a cloud application platform using Red Hat OpenShift.',
       offeredBy: 'ZAGA',
-      enabled: true
+      enabled: true,
+      category: 'developer-training'
     },
     {
       name: 'Node JS Developement with Databases',
       description: 'Who is able to develop reliable, performant JEE applications in a microservice-style environment and use Microprofile APIs to develop microservices enterprise Java applications.',
       offeredBy: 'ZAGA',
-      enabled: true
+      enabled: true,
+      category: 'developer-training'
     },
   ]
 

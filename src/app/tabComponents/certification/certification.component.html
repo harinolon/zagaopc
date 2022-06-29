@@ -1,13 +1,13 @@
 <div>
-   <section class="certificationContainer" >
+   <section class="certificationContainer" [style]="styleContainer" >
       <div>
-         <div class="textContent" >
+         <div class="textContent" [style]="styleTextContent"  >
             <h1 >{{certificationDetails.name}}</h1>
             <h6 style="margin-top: 10px;">{{certificationDetails.description}}</h6>
-            <button class="btn" style="background-color: #DC143C;color: #fff;margin-top: 10px;" >Enroll Now</button>
+            <button class="btn" style="background-color: #DC143C;color: #fff;margin-top: 10px;" *ngIf="offered === 'services'" >Enroll Now</button>
          </div>
       </div>
-      <div style="margin-top: 40px;color:#fff;width: 50%;" >
+      <div style="margin-top: 40px;color:#fff;width: 50%;" *ngIf="category != 'services'" >
          <h3>Offered By</h3>
          <h1>{{certificationDetails.offered}}</h1>
       </div>

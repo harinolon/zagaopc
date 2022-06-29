@@ -9,6 +9,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +24,7 @@ import { CareersComponent } from './tabComponents/careers/careers.component';
 import { ContactComponent } from './tabComponents/contact/contact.component';
 import { CertificationComponent } from './tabComponents/certification/certification.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './tabComponents/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PortfolioComponent,
     CareersComponent,
     ContactComponent,
-    CertificationComponent
+    CertificationComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +55,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatInputModule,
     MatIconModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
   ],
   providers: [MenuItemsComponent],
   bootstrap: [AppComponent]

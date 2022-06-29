@@ -1,13 +1,12 @@
 <div style="padding: 20px;" >
-   <section class="aboutContainer" >
+   <div >
+   <section class="aboutContainer"  >
       <div>
-         <img class="imgStyle1" src="../../../assets/PinClipart.com_clip-art-colleges_5528532.png" alt="ImageNotFound" />
+         <img class="imgStyle1" src="{{about[0].img1}}" alt="ImageNotFound" />
       </div>
       <div class="textContent" >
-         <h2>Who we are?</h2>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur porro odit, officia voluptas cum itaque sed! Velit officiis voluptatibus minus, porro itaque sint iusto repellendus rem sit ratione illo quia!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ut dolorem rerum assumenda accusamus facilis voluptates officia nemo similique excepturi reprehenderit sit, amet iusto quaerat aperiam? Qui sed eos repudiandae!
-         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cupiditate vel aspernatur dolores rerum error suscipit, ex beatae reprehenderit labore nostrum quod adipisci optio. Quis quia nemo nihil eligendi minus.
+         <h2>{{about[0].heading1}}</h2>
+         <p>{{about[0].content1}}
          </p>
       </div>
    </section>
@@ -15,32 +14,45 @@
    <!-- slide 2 -->
    <section class="aboutContainer" >
       <div class="textContent" >
-         <h2>Our Difference</h2>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur porro odit, officia voluptas cum itaque sed! Velit officiis voluptatibus minus, porro itaque sint iusto repellendus rem sit ratione illo quia!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ut dolorem rerum assumenda accusamus facilis voluptates officia nemo similique excepturi reprehenderit sit, amet iusto quaerat aperiam? Qui sed eos repudiandae!
-         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cupiditate vel aspernatur dolores rerum error suscipit, ex beatae reprehenderit labore nostrum quod adipisci optio. Quis quia nemo nihil eligendi minus.
+         <h2>{{about[1].heading2}}</h2>
+         <p>{{about[1].content2}}
          </p>
       </div>
       <div>
-         <img class="imgStyle2" src="../../../assets/PinClipart.com_jump-for-joy-clipart_5715300.png" alt="ImageNotFound" />
+         <img class="imgStyle2" src="{{about[1].img2}}" alt="ImageNotFound" />
       </div>
    </section>
    
    <!-- slide 3 -->
    <section class="aboutContainer" >
       <div>
-         <img class="imgStyle3" src="../../../assets/imgbin_goal-computer-icons-png.png" alt="ImageNotFound" />
+         <img class="imgStyle3" src="{{about[2].img3}}" alt="ImageNotFound" />
       </div>
       <div class="textContent" >
-         <h2>Our Goals!</h2>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur porro odit, officia voluptas cum itaque sed! Velit officiis voluptatibus minus, porro itaque sint iusto repellendus rem sit ratione illo quia!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ut dolorem rerum assumenda accusamus facilis voluptates officia nemo similique excepturi reprehenderit sit, amet iusto quaerat aperiam? Qui sed eos repudiandae!
-         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum cupiditate vel aspernatur dolores rerum error suscipit, ex beatae reprehenderit labore nostrum quod adipisci optio. Quis quia nemo nihil eligendi minus.
+         <h2>{{about[2].heading3}}</h2>
+         <p>{{about[2].content3}}
          </p>
       </div>
    </section>
-
+</div>
    <!-- slide 3 -->
+   <section class="slide4"  >
+      <h2>OUR MANAGEMENT TEAM</h2>
+      <div class="gridContainer" >
+         <a class="overallContainer" *ngFor="let users of expertDetails" [href]="users.linkedInUrl" target="_blank" >
+            <div class="photoContainer" >
+               <img class="photoStyle" [src]="users.imageUrl"  alt="ImageNotFound" />
+               <div class="nameBox" >
+                  <h2 class="name" >{{users.name}}</h2>
+               </div>
+            </div>
+            <p class="role" >{{users.title}}</p>
+            <!-- <span class="shortMessage" >View LinkedIn Page</span> -->
+         </a>
+      </div>
+   </section>
+
+   <!-- slide 4 -->
    <section class="slide4"  >
       <h2>OUR DEVELOPMENT EXPERTS</h2>
       <div class="gridContainer" >

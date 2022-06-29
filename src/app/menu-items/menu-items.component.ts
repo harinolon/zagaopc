@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiServicesService } from '../apiServices/api-services.service';
 
 @Component({
   selector: 'app-menu-items',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-items.component.scss']
 })
 export class MenuItemsComponent implements OnInit {
+  // menuList:any = [];
   menuList = [
     {
       name: 'About',
@@ -35,7 +37,7 @@ export class MenuItemsComponent implements OnInit {
     {
       name: 'Careers',
       link: 'career',
-      enabled: true
+      enabled: false
     },
     {
       name: 'Contact',
@@ -43,11 +45,26 @@ export class MenuItemsComponent implements OnInit {
       enabled: true
     }
   ];
+  menuList1:any = [];
+  menuData:any;
 
-
-  constructor() { }
+  constructor(private api: ApiServicesService) { }
 
   ngOnInit(): void {
+    this.menuList.filter((item) => item.enabled).forEach(item => {
+      this.menuList1.push(item);
+    });
+
+    // this.api.getMenuList("menu","ZagaInformation").subscribe((data) => {
+    //   this.menuData = data;
+    //   this.menuList = this.menuData.Menu.menuList;
+    //   this.menuList.filter((item:any) => item.enabled).forEach((item:any) => {
+    //     this.menuList1.push(item);
+    //   });
+    //   console.log(this.menuList);
+    // });
+           
+
   }
 
   

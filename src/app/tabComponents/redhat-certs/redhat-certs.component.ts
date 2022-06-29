@@ -12,19 +12,22 @@ export class RedhatCertsComponent implements OnInit {
       name: 'Red Hat Certified System Administrator (RHCSA)',
       description: 'Perform the core system administration skills required in Red Hat Enterprise Linux environments.',
       offeredBy: 'Red Hat',
-      enabled: true
+      enabled: true,
+      category: 'redhat-certs'
     },
     {
       name: 'Red Hat Certified Specialist in OpenShift Administration',
       description: 'Create, configure, and manage a cloud application platform using Red Hat OpenShift.',
       offeredBy: 'Red Hat',
-      enabled: true
+      enabled: true,
+      category: 'redhat-certs'
     },
     {
       name: 'Red Hat Certified Enterprise Microservices Developer',
       description: 'Who is able to develop reliable, performant JEE applications in a microservice-style environment and use Microprofile APIs to develop microservices enterprise Java applications.',
       offeredBy: 'Red Hat',
-      enabled: true
+      enabled: true,
+      category: 'redhat-certs'
     },
   ]
 

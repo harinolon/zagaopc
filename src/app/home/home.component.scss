@@ -24,4 +24,30 @@
    margin-left: 42px;
 }
 
+.partner {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 10%;
+}
 
+.textStyle {
+   font-size: 15px;
+   font-weight: bold;
+}
+
+.imageStyle {
+   height: 200px;
+   width: 70px;
+   object-fit: cover;
+   margin-right: 20px;
+}
+
+.imageStyle2 {
+   height: 100px;
+   width: 200px;
+   object-fit: cover;
+   margin-right: 20px;
+}

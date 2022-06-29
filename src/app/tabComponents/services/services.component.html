@@ -2,11 +2,11 @@
    <h1 class="heading" >Our Services</h1>
    <h5 style="color: #000;" >We offer Business scale solutions.</h5>
    <div class="services__wrapper">
-       <div class="services__card" *ngFor="let services of servicesList" >
+       <a class="services__card" *ngFor="let services of servicesList" [routerLink]="['/certification']" [state]="{data:{name:services.name,description:services.description,keyPoints: keyPoints,category: services.category}}" >
            <h2  >{{services.name}}</h2>
            <div class="imageContainer" ><img class="photoStyle" [src]="services.imageUrl" alt=""></div>
            <p>{{services.description}}</p>
            <!-- <div class="services__btn"><button>Get Started</button></div> -->
-       </div>
+       </a>
    </div>
 </div>
