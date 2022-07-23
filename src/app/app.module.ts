@@ -1,7 +1,8 @@
-import { NgModule } from '@angular/core';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { StickyHeaderModule, NavbarModule } from 'angular-bootstrap-md';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -10,6 +11,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,6 +27,7 @@ import { ContactComponent } from './tabComponents/contact/contact.component';
 import { CertificationComponent } from './tabComponents/certification/certification.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './tabComponents/footer/footer.component';
+import { AnimationComponent } from './animation/animation.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,8 @@ import { FooterComponent } from './tabComponents/footer/footer.component';
     CareersComponent,
     ContactComponent,
     CertificationComponent,
-    FooterComponent
+    FooterComponent,
+    AnimationComponent
   ],
   imports: [
     BrowserModule,
@@ -56,9 +60,16 @@ import { FooterComponent } from './tabComponents/footer/footer.component';
     MatIconModule,
     MatCardModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSnackBarModule
   ],
-  providers: [MenuItemsComponent],
+  providers: [MenuItemsComponent, {
+    provide: APP_INITIALIZER, 
+    useValue: () =>  new Promise(resolve =>
+      setTimeout(resolve, 3000)
+    ),
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

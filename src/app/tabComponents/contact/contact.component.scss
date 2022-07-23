@@ -1,12 +1,13 @@
 .contactContainer {
    padding: 50px;
    background-color: #E0FFFF;
-   height: 90.5%;
+   height: auto;
 }
 
 .location {
    display: flex;
    flex-direction: row;
+   margin-top: 10px;
 }
 
 .imgStyle {

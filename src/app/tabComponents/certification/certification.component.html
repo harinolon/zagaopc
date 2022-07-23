@@ -1,5 +1,5 @@
 <div>
-   <section class="certificationContainer" [style]="styleContainer" >
+   <section class="certificationContainer" [style]="styleContainer" id="content" >
       <div>
          <div class="textContent" [style]="styleTextContent"  >
             <h1 >{{certificationDetails.name}}</h1>
@@ -9,7 +9,7 @@
       </div>
       <div style="margin-top: 40px;color:#fff;width: 50%;" *ngIf="category != 'services'" >
          <h3>Offered By</h3>
-         <h1>{{certificationDetails.offered}}</h1>
+         <h1>{{certificationDetails.offeredBy}}</h1>
       </div>
    </section>
 

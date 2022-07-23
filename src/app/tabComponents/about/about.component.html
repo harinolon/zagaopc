@@ -39,7 +39,7 @@
    <section class="slide4"  >
       <h2>OUR MANAGEMENT TEAM</h2>
       <div class="gridContainer" >
-         <a class="overallContainer" *ngFor="let users of expertDetails" [href]="users.linkedInUrl" target="_blank" >
+         <a class="overallContainer" *ngFor="let users of managementTeam" [href]="users.linkedInUrl" target="_blank" >
             <div class="photoContainer" >
                <img class="photoStyle" [src]="users.imageUrl"  alt="ImageNotFound" />
                <div class="nameBox" >
@@ -53,7 +53,7 @@
    </section>
 
    <!-- slide 4 -->
-   <section class="slide4"  >
+   <section id="experts" class="slide4"  >
       <h2>OUR DEVELOPMENT EXPERTS</h2>
       <div class="gridContainer" >
          <a class="overallContainer" *ngFor="let users of expertDetails" [href]="users.linkedInUrl" target="_blank" >

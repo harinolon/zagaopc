@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
 @Component({
@@ -18,11 +17,10 @@ export class CertificationComponent implements OnInit {
   constructor(private route: Location) { }
 
   ngOnInit(): void {
-    this.paramsData = this.route.getState();
-    this.certificationDetails = this.paramsData.data;
+    this.paramsData = localStorage.getItem('service');
+    this.certificationDetails = JSON.parse(this.paramsData);
     this.keyPoints = this.certificationDetails.keyPoints;
-    console.log(this.certificationDetails);
-    this.offered = this.certificationDetails.offered;
+    this.offered = this.certificationDetails.offeredBy;
     this.category = this.certificationDetails.category;
 
     if(this.category == 'services'){
@@ -39,5 +37,4 @@ export class CertificationComponent implements OnInit {
       this.styleTextContent = '';
     }
   }
-
 }

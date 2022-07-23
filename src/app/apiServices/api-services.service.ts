@@ -6,6 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ApiServicesService {
   url = 'https://us-east-1.aws.data.mongodb-api.com/app/application-0-wouft/endpoint/zaga/information';
+  mailUrl = 'https://us-east-1.aws.data.mongodb-api.com/app/application-0-wouft/endpoint/sendmail';
 
   constructor(private http: HttpClient) { }
 
@@ -15,5 +16,9 @@ export class ApiServicesService {
       "collection": collection
     }
     return this.http.post(this.url,payload);
+  }
+
+  sendMail(payload:any) {
+    return this.http.post(this.mailUrl,payload);
   }
 }
