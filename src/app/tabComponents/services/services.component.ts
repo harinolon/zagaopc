@@ -13,7 +13,7 @@ export class ServicesComponent implements OnInit {
     {
       name: 'Appliaction Modernization',
       description: 'We develop mobile apps for iOS and Android.',
-      imageUrl: '../../../assets/clipart1788464.png',
+      imageUrl: '../../../assets/appmod.png',
       keyPoints: [
         {
           point: "We offer Mobile Application development for Android & IOS,services for different organizations and banking sectors on developing Mobile Applications."
@@ -40,7 +40,7 @@ export class ServicesComponent implements OnInit {
     {
       name: 'Professional Service',
       description: 'We develop web apps for both frontend and backend.',
-      imageUrl: '../../../assets/pngfind.com-web-development-icon-png-4152510.png',
+      imageUrl: '../../../assets/Support.png',
       enabled: true,
       keyPoints: [
         {
@@ -67,7 +67,7 @@ export class ServicesComponent implements OnInit {
     {
       name: 'Microservice',
       description: 'We develop cloud solutions for both frontend and backend.',
-      imageUrl: '../../../assets/pngwing.com.png',
+      imageUrl: '../../../assets/comp-insight3.png',
       enabled: true,
       keyPoints: [
         {
@@ -94,7 +94,7 @@ export class ServicesComponent implements OnInit {
     {
       name: 'Process Automation',
       description: 'We develop cloud solutions for both frontend and backend.',
-      imageUrl: '../../../assets/pngwing.com.png',
+      imageUrl: '../../../assets/346-3461293_process-automation-automation-clip-art.png',
       enabled: true,
       keyPoints: [
         {

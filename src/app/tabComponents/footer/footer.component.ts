@@ -25,8 +25,8 @@ export class FooterComponent implements OnInit {
       "link": "#"
     },
     {
-      "name":"Technology",
-      "link": "/about#experts"
+      "name":"RedHat Certification",
+      "link": "redhatCerts"
     },
     {
       "name":"About",
