@@ -51,20 +51,24 @@
    padding-left: 10px;
    padding-right: 10px;
    border-radius: 4px;
-   background-image: linear-gradient(to bottom, #ed213a, #93291e);
+  //  background-image: linear-gradient(to bottom, #ed213a, #93291e);
+  background-image: linear-gradient(to bottom, #077f9dd9, #012121);
    transition: 0.3s ease-in;
  }
  
  .services__card:nth-child(2) {
-   background-image: linear-gradient(to bottom, #ed213a, #93291e);
+  //  background-image: linear-gradient(to bottom, #ed213a, #93291e);
+  background-image: linear-gradient(to bottom, #077f9dd9, #012121);
  }
  
  .services__card:nth-child(3) {
-   background-image: linear-gradient(to bottom, #ed213a, #93291e);
+  //  background-image: linear-gradient(to bottom, #ed213a, #93291e);
+  background-image: linear-gradient(to bottom, #077f9dd9, #012121);
  }
  
  .services__card h2 {
    text-align: center;
+   font-size: 1.4rem;
  }
  
  .services__card p {

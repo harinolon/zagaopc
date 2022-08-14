@@ -10,6 +10,11 @@ export class MenuItemsComponent implements OnInit {
   // menuList:any = [];
   menuList = [
     {
+      name: 'Home',
+      link: '/',
+      enabled: true
+    },
+    {
       name: 'About',
       link: 'about',
       enabled: true
@@ -20,14 +25,14 @@ export class MenuItemsComponent implements OnInit {
       enabled: true
     },
     {
-      name: 'RedHat Certification & Training',
+      name: 'RedHat Certification',
       link: 'redhatCerts',
       enabled: true
     },
     {
       name: 'Developer Training',
       link: 'devTraining',
-      enabled: true
+      enabled: false
     },
     {
       name: 'Portfolio',
