@@ -12,12 +12,17 @@ export class FooterComponent implements OnInit {
   flags:any = [
     {
       flag: "../../assets/IndianFlag.png",
-      style: "height:50px;",
+      style: "height:52px;width:50px",
     },
     {
       flag: "../../assets/USAFlag.png",
-      style: "height:30px;",
+      style: "height:40px;width:50px",
+    },
+    {
+      flag: "../../assets/singam.png",
+      style: "height:36px;width:50px;",
     }
+
   ];
   menuItems:any = [
     {
@@ -35,11 +40,12 @@ export class FooterComponent implements OnInit {
     {
       "name":"Services",
       "link": "services"
-    },
-    {
-      "name":"Privacy Policy",
-      "link": "#"
     }
+    // ,
+    // {
+    //   "name":"Privacy Policy",
+    //   "link": "#"
+    // }
   ];
   socialLinks:any = [
     {

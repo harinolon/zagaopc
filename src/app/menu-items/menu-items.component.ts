@@ -25,7 +25,7 @@ export class MenuItemsComponent implements OnInit {
       enabled: true
     },
     {
-      name: 'RedHat Certification',
+      name: 'RedHatCertification',
       link: 'redhatCerts',
       enabled: true
     },

@@ -12,7 +12,7 @@ export class ServicesComponent implements OnInit {
   servicesList = [
     {
       name: 'Appliaction Modernization',
-      description: 'We develop mobile apps for iOS and Android.',
+      description: 'Application Modernization values the existing functionality and reliability of the incumbent application that keeps the lights on as highly as any new capability.',
       imageUrl: '../../../assets/appmod.png',
       keyPoints: [
         {
@@ -39,7 +39,7 @@ export class ServicesComponent implements OnInit {
     },
     {
       name: 'Professional Service',
-      description: 'We develop web apps for both frontend and backend.',
+      description: 'Our consultants will work with you to evaluate and implement solutions to help you reduce costs, improve efficiency, and deliver quickly.',
       imageUrl: '../../../assets/Support.png',
       enabled: true,
       keyPoints: [
@@ -66,7 +66,7 @@ export class ServicesComponent implements OnInit {
     },
     {
       name: 'Microservice',
-      description: 'We develop cloud solutions for both frontend and backend.',
+      description: 'Compared to monolithic applications, microservices are small, autonomous units that address individual functions and work with others to help an application function.',
       imageUrl: '../../../assets/comp-insight3.png',
       enabled: true,
       keyPoints: [
@@ -93,7 +93,7 @@ export class ServicesComponent implements OnInit {
     },
     {
       name: 'Process Automation',
-      description: 'We develop cloud solutions for both frontend and backend.',
+      description: 'With our intuitive, no-code interface, business users can quickly create, adapt, and automate manual processes and workflows without IT assistance.',
       imageUrl: '../../../assets/346-3461293_process-automation-automation-clip-art.png',
       enabled: true,
       keyPoints: [

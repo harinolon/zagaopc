@@ -13,10 +13,10 @@ export class ContactComponent implements OnInit {
   contactForm: FormGroup;
   address:any = [
     {
-      address: "Zaga Information Technology Pvt. Ltd.",
+      address: "Zaga Open Source Pvt. Ltd.",
     },
     {
-      address: "Zaga Information Technology Pvt. Ltd.",
+      address: "Zaga Open Source Pvt. Ltd.",
     }
   ];
   phoneNumbers:any = [

@@ -4,9 +4,31 @@
          <div class="textContent" [style]="styleTextContent"  >
             <h1 >{{certificationDetails.name}}</h1>
             <h6 style="margin-top: 10px;">{{certificationDetails.description}}</h6>
-            <button class="btn" style="background-color: #DC143C;color: #fff;margin-top: 10px;" *ngIf="offered === 'services'" >Enroll Now</button>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"style="background-color: #DC143C;color: #fff;margin-top: 10px;" *ngIf="offered === 'Red Hat'" >Enroll Now</button>
          </div>
       </div>
+
+      <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="modal-body">
+         ...
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         <button type="button" class="btn btn-primary">Save changes</button>
+       </div>
+     </div>
+   </div>
+ </div>
+      
       <div style="margin-top: 40px;color:#fff;width: 50%;" *ngIf="category != 'services'" >
          <h3>Offered By</h3>
          <h1>{{certificationDetails.offeredBy}}</h1>

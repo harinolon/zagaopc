@@ -1,29 +1,38 @@
 .container {
    display: flex;
    flex-direction: row;
+   position: sticky;
    justify-content: flex-end;
-   height: 60px;
+   height: 100px;
  }
 
- 
- 
- .oneList {
-   margin: 0 100px 0 20px;
-   text-decoration-line: none;
-  //  font-size: 1.2rem;
-  //  color: #C40233;
-  // // color: #fff;
-  //  font-weight: 600;
- }
+ .containermenu {
+  display: contents;
+  position: sticky;
+  //text-indent: -1em;
+  //flex-direction: row;
+  // justify-content:flex-end;
+  height: 60px;
+}
 
- .logoStyle {
-    // width: 300px;
-    // height: 60px;
-    width: auto;
-    height: auto;
-    object-fit: contain;
- }
- 
+
+.oneList {
+  margin: 0 100px 0 20px;
+  text-decoration-line: none;
+ //  font-size: 1.2rem;
+ //  color: #C40233;
+ // // color: #fff;
+ //  font-weight: 600;
+}
+
+.logoStyle {
+   // width: 300px;
+   // height: 60px;
+   width: auto;
+   height: auto;
+   object-fit: contain;
+}
+
 //  .oneList:hover {
 //    color: red;
 //   // color: #C40233;
@@ -31,20 +40,19 @@
 //    cursor: pointer;
 //    content: "";
 //  }
- 
- .listStyle {
-   margin: 15px 20px 20px 20px;
-   text-decoration-line: none;
-   font-size: 1.2rem;
-   color: #C40233;
-  // color: #fff;
- }
- 
- .listStyle:hover {
-   color: red;
-  // color: #C40233;
-   border-bottom: 2px solid #ffc107;
-   cursor: pointer;
-   content: "";
- }
 
+.listStyle {
+  margin: 15px 5px 30px 150px;
+  text-decoration-line: none;
+  font-size: 1.2rem;
+  color: #C40233;
+ // color: #fff; 
+}
+
+.listStyle:hover {
+  color: rgb(6, 6, 6);
+ // color: #C40233;
+  border-bottom: 2px solid #201902;
+  cursor: pointer;
+  content: "";
+}
