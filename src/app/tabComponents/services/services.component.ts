@@ -12,7 +12,7 @@ export class ServicesComponent implements OnInit {
   servicesList = [
     {
       name: 'Appliaction Modernization',
-      description: 'Application Modernization values the existing functionality and reliability of the incumbent application that keeps the lights on as highly as any new capability.',
+      description: 'Application Modernization values the existing functionality and reliability of the application that keeps the lights on as highly as any new capability.',
       imageUrl: '../../../assets/appmod.png',
       keyPoints: [
         {
@@ -66,7 +66,7 @@ export class ServicesComponent implements OnInit {
     },
     {
       name: 'Microservice',
-      description: 'Compared to monolithic applications, microservices are small, autonomous units that address individual functions and work with others to help an application function.',
+      description: 'Compared to monolithic applications, microservices are small, autonomous units that address individual functions to help an application function.',
       imageUrl: '../../../assets/comp-insight3.png',
       enabled: true,
       keyPoints: [

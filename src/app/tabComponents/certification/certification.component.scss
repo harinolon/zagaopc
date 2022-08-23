@@ -41,3 +41,49 @@
    padding-left: 40px;
    color: #fff;
 }
+
+
+// .close{
+//    position: absolute;
+//    top: 4%;
+//    right:14px;
+//    font-size: 32px;
+//    transform: rotate(45deg);
+//    cursor:pointer;
+//    // display: none;
+
+// }
+
+.contactContainer {
+   padding: 50px;
+   width: 100%;
+   background-color: #E0FFFF;
+   height: auto;
+}
+
+.location {
+   display: flex;
+   flex-direction: row;
+   // margin-top: 10px;
+}
+
+.boxContainer {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+
+.whiteBox {
+   background-color: #fff;
+   border-radius: 20px;
+   padding: 20px;
+   // margin-top: 10px;
+   width: 100%;
+}
+
+.nameInput {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
