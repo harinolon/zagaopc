@@ -1,0 +1,44 @@
+<div class="modal-content">
+   <div class="modal-header">
+     <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+     <button type="button" class="btn-close" aria-label="Close" (click)="close()"></button>
+   </div>
+   <div class="modal-body">
+      <form [formGroup]="contactForm" (submit)="onSubmit()" >
+         <p>
+            <mat-form-field style="width: 30%;margin: 5% 0 3% 10%" appearance="fill">
+              <mat-label>First Name</mat-label>
+              <input matInput placeholder="Enter your First Name" required formControlName="firstname" >
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              <mat-error>Enter your FirstName</mat-error>
+            </mat-form-field>
+            <mat-form-field style="width: 30%;margin-left: 10%;" appearance="fill">
+               <mat-label>Last Name</mat-label>
+               <input matInput placeholder="Enter your Last Name" required formControlName="lastname" >
+               <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+               <mat-error>Enter your Last Name</mat-error>
+             </mat-form-field>
+          </p>
+            <p>
+               <mat-form-field style="width: 60%;margin-left: 10%;" appearance="fill">
+                  <mat-label>Email</mat-label>
+                  <input matInput placeholder="Enter your Email" required formControlName="email" >
+                  <mat-icon matSuffix>mail_outline</mat-icon>
+                  <mat-error>Enter your Email</mat-error>
+                </mat-form-field>
+            </p>
+            <p>
+               <mat-form-field style="width: 60%;margin: 3% 0 3% 10%" appearance="fill">
+                  <mat-label>Want to Say something!</mat-label>
+                  <textarea matInput required formControlName="message" ></textarea>
+                  <mat-icon matSuffix>info_outline</mat-icon>
+                  <mat-error>Enter your Message</mat-error>
+                </mat-form-field>
+            </p>
+            <p >
+               <button mat-raised-button color="primary" style="width:30%;margin-left: 30%;font-size: 1rem;" [disabled]="!contactForm.valid" >Send</button>
+            </p>
+         </form>
+   </div>
+   
+ </div>

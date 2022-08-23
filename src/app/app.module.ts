@@ -28,6 +28,8 @@ import { CertificationComponent } from './tabComponents/certification/certificat
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './tabComponents/footer/footer.component';
 import { AnimationComponent } from './animation/animation.component';
+import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
+import { ContactModalComponent } from './tabComponents/certification/contact-modal/contact-modal.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,8 @@ import { AnimationComponent } from './animation/animation.component';
     ContactComponent,
     CertificationComponent,
     FooterComponent,
-    AnimationComponent
+    AnimationComponent,
+    ContactModalComponent
   ],
   imports: [
     BrowserModule,
@@ -61,7 +64,8 @@ import { AnimationComponent } from './animation/animation.component';
     MatCardModule,
     MatButtonModule,
     HttpClientModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MdbModalModule,
   ],
   providers: [MenuItemsComponent, {
     provide: APP_INITIALIZER, 

@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Location } from '@angular/common';
-import { Modal } from 'bootstrap';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ApiServicesService } from 'src/app/apiServices/api-services.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { MdbModalRef, MdbModalService } from 'mdb-angular-ui-kit/modal';
+import { ContactModalComponent } from './contact-modal/contact-modal.component';
 
 @Component({
   selector: 'app-certification',
@@ -19,10 +19,10 @@ export class CertificationComponent implements OnInit {
   category:any;
   styleContainer:any;
   styleTextContent:any;
-  // modalRef:any;
   constructor(private fb: FormBuilder,
     private apiCall: ApiServicesService,
-    private snackBar: MatSnackBar
+    private snackBar: MatSnackBar,
+    private modalService: MdbModalService
   ) {
       this.contactForm = this.fb.group({
         firstname: ['', Validators.required],
@@ -32,7 +32,7 @@ export class CertificationComponent implements OnInit {
       });
    }
    durationInSeconds = 5;
- 
+   modalRef: MdbModalRef<ContactModalComponent> | null = null;
 
   ngOnInit(): void {
     this.paramsData = localStorage.getItem('service');
@@ -57,14 +57,17 @@ export class CertificationComponent implements OnInit {
   }
   displayStyle = "none";
   
-  openPopup() {
-    this.displayStyle = "block";
-  }
-  closePopup() {
-    this.displayStyle = "none";
-    // this.modalRef.modal('hide');
+  open() {
+    this.modalRef = this.modalService.open(ContactModalComponent,{
+      modalClass: 'modal-lg',
+      
+    });
+    this.modalRef.onClose.subscribe((message: any) => {
+      console.log(message);
+    });
   }
   
+
   onSubmit() {
     console.log(this.contactForm.value);
     // this.apiCall.sendMail(this.contactForm.value).subscribe((data:any) => {

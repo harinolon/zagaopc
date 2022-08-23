@@ -4,80 +4,13 @@
          <div class="textContent" [style]="styleTextContent"  >
             <h1 >{{certificationDetails.name}}</h1>
             <h6 style="margin-top: 10px;">{{certificationDetails.description}}</h6>
-            <button class="btn btn-primary btn-md" data-toggle="modal" style="background-color: #DC143C;color: #fff;margin-top: 10px;" *ngIf="offered === 'Red Hat'"(click)="openPopup()">Enroll Now</button>
+            <button class="btn btn-primary btn-md" data-toggle="modal" style="background-color: #DC143C;color: #fff;margin-top: 10px;" (click)="open()">Enroll Now</button>
          </div>
       </div>
-      <!-- <h3>Please click on the below button open popup</h3>
-<hr/>
-<button
-  style="margin: 50px; padding: 10px"
-  type="button"
-  class="btn btn-primary"
-  (click)="openPopup()">Show Data
-</button> -->
 
-<hr/>
-<div class="modal" id="modal" tabindex="-1" width="30rem"  role="dialog"  [ngStyle]="{'display':displayStyle}">  
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title">REGISTER</h4>
-        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label ="Close"></button>
-        <!-- <div class="close" data-mdb-dismiss="modal">+</div> -->
-      </div>
+
       
-      <!-- <button
-          type="button"
-          class="btn-close"
-          data-mdb-dismiss="modal"
-          aria-label="Close"></button> -->
-      <div class="modal-body">
-        <div class="whiteBox" >
-          <form [formGroup]="contactForm" (submit)="onSubmit()" >
-             <p>
-                <mat-form-field style="width: 40%;margin: 5% 0 3% 10%" appearance="fill">
-                  <mat-label>First Name</mat-label>
-                  <input matInput placeholder="Enter your First Name" required formControlName="firstname" >
-                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                  <mat-error>Enter your FirstName</mat-error>
-                </mat-form-field>
-                <mat-form-field style="width: 40%;margin-left: 10%;" appearance="fill">
-                   <mat-label>Last Name</mat-label>
-                   <input matInput placeholder="Enter your Last Name" required formControlName="lastname" >
-                   <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                   <mat-error>Enter your Last Name</mat-error>
-                 </mat-form-field>
-              </p>
-                <p>
-                   <mat-form-field style="width: 57%;margin-left: 10%;" appearance="fill">
-                      <mat-label>Email</mat-label>
-                      <input matInput placeholder="Enter your Email" required formControlName="email" >
-                      <mat-icon matSuffix>mail_outline</mat-icon>
-                      <mat-error>Enter your Email</mat-error>
-                    </mat-form-field>
-                </p>
-                <p>
-                   <mat-form-field style="width: 60%;margin: 3% 0 3% 10%" appearance="fill">
-                      <mat-label>Want to Say something!</mat-label>
-                      <textarea matInput required formControlName="message" ></textarea>
-                      <mat-icon matSuffix>info_outline</mat-icon>
-                      <mat-error>Enter your Message</mat-error>
-                    </mat-form-field>
-                </p>
-                <!-- <p >
-                   <button mat-raised-button color="primary" style="width:30%;margin-left: 30%;font-size: 1rem;" [disabled]="!contactForm.valid" >Send</button>
-                </p> -->
-             </form>
-       </div>
-       </div>
-  
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger"mat-raised-button color="primary" style="width:30%;margin-left: 30%;font-size: 1rem;" [disabled]="!contactForm.valid" >Send</button>
-    
-      </div>
-    </div>
-  </div>
+
 
       
       <div style="margin-top: 40px;color:#fff;width: 50%;" *ngIf="category != 'services'" >
