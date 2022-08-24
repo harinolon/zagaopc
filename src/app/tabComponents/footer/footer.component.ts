@@ -11,16 +11,16 @@ export class FooterComponent implements OnInit {
   // UsFlag:any = "../../assets/USAFlag.png";
   flags:any = [
     {
-      flag: "../../assets/IndianFlag.png",
-      style: "height:52px;width:50px",
-    },
-    {
-      flag: "../../assets/USAFlag.png",
+      flag: "../../assets/india-flag-1900.png",
       style: "height:40px;width:50px",
     },
     {
-      flag: "../../assets/singam.png",
-      style: "height:36px;width:50px;",
+      flag: "../../assets/purepng.com-american-flagflagscountrylandflag-831523995311m0uxm.png",
+      style: "height:40px;width:50px",
+    },
+    {
+      flag: "../../assets/t_singapore-large-flag-7409.png",
+      style: "height:40px;width:50px;",
     }
 
   ];
