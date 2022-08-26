@@ -52,6 +52,8 @@ export class MenuItemsComponent implements OnInit {
   ];
   menuList1:any = [];
   menuData:any;
+  navClass1:any;
+  mobileToggle:boolean = false;
 
   constructor(private api: ApiServicesService) { }
 
@@ -70,6 +72,16 @@ export class MenuItemsComponent implements OnInit {
     // });
            
 
+  }
+
+  onHandleService(){
+    this.mobileToggle = !this.mobileToggle;
+    if(this.mobileToggle){
+      this.navClass1 = "responsive";
+    }
+    else{
+      this.navClass1 = "";
+    }
   }
 
   

@@ -11,16 +11,41 @@
 
 
       <div class="container-fluid">
-            <!-- <a class="oneList" href="/"> -->
              <img src="../../assets/zagalogouncropped.png" alt="noImageFound" class="logoStyle" >
-            <!-- </a> -->
+             <a  class="icon" (click)="onHandleService()">
+                <i class="fa fa-bars"></i>
+              </a>
       </div>
       
 
 
-   <nav class="navbar navbar-expand-sm sticky-top navbar-dark" style="background-color: #101010d9;">
+   <!-- <nav class="navbar navbar-expand-sm sticky-top navbar-dark" style="background-color: #101010d9;">
       <div class="containermenu">
-          <!-- Replace this with your own logo -->
+          
+          <a class="listStyle" *ngFor="let list of menuList1" [routerLink]="[list.link]">{{list.name}}</a>
+         
+      </div>
+  </nav> -->
+      <!-- <div class="topnav" id="menuTopNav">
+        <nav class="navbar navbar-expand-sm sticky-top navbar-dark" style="background-color: #101010d9;">
+            <div class="containermenu">
+                
+                <a class="listStyle" *ngFor="let list of menuList1" [routerLink]="[list.link]">{{list.name}}</a>
+               
+            </div>
+        </nav>
+      </div> -->
+      <div>
+        <nav class="navbar navbar-expand-sm sticky-top navbar-dark" [ngClass]="navClass1" style="background-color: #101010d9;">
+            <div class="containermenu">
+                
+                <a class="listStyle" *ngFor="let list of menuList1" [routerLink]="[list.link]" (click)="onHandleService()">{{list.name}}</a>
+               
+            </div>
+        </nav>
+    </div>
+
+  <!-- Replace this with your own logo -->
           <!-- Toggler/collapsibe Button for small screens -->
           <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myList"
               aria-controls="myList" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +53,3 @@
           </button> -->
 
           <!-- List of links -->
-          <a class="listStyle" *ngFor="let list of menuList1" [routerLink]="[list.link]">{{list.name}}</a>
-         
-      </div>
-  </nav>

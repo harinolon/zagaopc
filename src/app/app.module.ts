@@ -67,13 +67,14 @@ import { ContactModalComponent } from './tabComponents/certification/contact-mod
     MatSnackBarModule,
     MdbModalModule,
   ],
-  providers: [MenuItemsComponent, {
-    provide: APP_INITIALIZER, 
-    useValue: () =>  new Promise(resolve =>
-      setTimeout(resolve, 3000)
-    ),
-    multi: true
-  }],
+  providers: [MenuItemsComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+// providers: [MenuItemsComponent, {
+//   provide: APP_INITIALIZER, 
+//   useValue: () =>  new Promise(resolve =>
+//     setTimeout(resolve, 3000)
+//   ),
+//   multi: true
+// }],
