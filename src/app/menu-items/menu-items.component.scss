@@ -10,9 +10,8 @@
  .containermenu {
   display: flex;
   position: sticky;
-  //text-indent: -1em;
+  //text-indent: -3em;
   //flex-direction: row;
-  // justify-content:flex-end;
   height: 60px;
 }
 
@@ -43,7 +42,7 @@
 //  }
 
 .listStyle {
-  margin: 10px 5px 20px 150px;
+  margin: 10px 5px 20px 75px;
   text-decoration-line: none;
   font-size: 1.2rem;
   color: #f8f2f3;

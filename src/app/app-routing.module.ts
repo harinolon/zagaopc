@@ -10,6 +10,8 @@ import { DeveloperTrainingComponent } from './tabComponents/developer-training/d
 import { PortfolioComponent } from './tabComponents/portfolio/portfolio.component';
 import { RedhatCertsComponent } from './tabComponents/redhat-certs/redhat-certs.component';
 import { ServicesComponent } from './tabComponents/services/services.component';
+import { ProfileComponent } from './tabComponents/profile/profile.component';
+import { ResourceComponent } from './tabComponents/resource/resource.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,7 +23,9 @@ const routes: Routes = [
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'career', component: CareersComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'animation', component: AnimationComponent }
+  { path: 'animation', component: AnimationComponent },
+  { path: 'profile', component: ProfileComponent},
+  { path: 'resource', component: ResourceComponent }
 ];
 
 @NgModule({
