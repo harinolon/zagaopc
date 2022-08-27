@@ -19,6 +19,7 @@ export class CertificationComponent implements OnInit {
   category:any;
   styleContainer:any;
   styleTextContent:any;
+  mobileViewCerts:any;
   constructor(private fb: FormBuilder,
     private apiCall: ApiServicesService,
     private snackBar: MatSnackBar,
@@ -41,6 +42,7 @@ export class CertificationComponent implements OnInit {
     this.offered = this.certificationDetails.offeredBy;
     this.category = this.certificationDetails.category;
 
+    console.log(this.category, "redhat service");
     if(this.category == 'services'){
       this.styleContainer = {
         'padding-bottom': '4%',
@@ -49,6 +51,9 @@ export class CertificationComponent implements OnInit {
         'width': '100%',
         'margin-top': '8%',
       }
+    }
+    else if(this.category == 'redhat-certs') {
+      this.mobileViewCerts = "redhat-certs";
     }
     else {
       this.styleContainer = '';

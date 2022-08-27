@@ -30,6 +30,8 @@ import { FooterComponent } from './tabComponents/footer/footer.component';
 import { AnimationComponent } from './animation/animation.component';
 import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
 import { ContactModalComponent } from './tabComponents/certification/contact-modal/contact-modal.component';
+import { ResourceComponent } from './tabComponents/resource/resource.component';
+import { ProfileComponent } from './tabComponents/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { ContactModalComponent } from './tabComponents/certification/contact-mod
     CertificationComponent,
     FooterComponent,
     AnimationComponent,
-    ContactModalComponent
+    ContactModalComponent,
+    ResourceComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

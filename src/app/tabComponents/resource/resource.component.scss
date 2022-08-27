@@ -1,0 +1,155 @@
+.title {
+   text-align: center;
+   color: black;
+   margin-top: 50px;
+ }
+
+ .slide4 h2 {
+   margin-bottom: 3rem;
+   margin-top: 3rem;
+   margin-left: 1rem;     
+ }
+
+.gridContainer {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 3rem;
+   grid-row-gap: 3rem;
+   margin-top: 3rem;
+   margin-left: 7rem;
+   margin-right: 7rem;
+}
+
+.photoContainer {
+   position: relative;
+   text-align: center;
+}
+
+
+.overallContainer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+   color: black;
+   opacity: 1;
+   transition: 0.3s ease-in-out;
+}
+
+.nameBox {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.photoStyle {
+   height: 400px;
+   width: 300px;
+   object-fit: cover;
+   border-radius: 2px;
+}
+
+.name {
+   // width: 200px;
+   // height: 80px;
+   // display: flex;
+   // justify-content: center;
+   // align-items: center;
+   // background-color: #fff;
+   margin-top: 20px;
+   font-size: 1.4rem;
+   font-weight: 500;
+   color: #000080;
+}
+
+
+
+.footer-col {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 10px;
+   padding: 0 0 40px 0;
+}
+
+.footer-col .social-links a {
+   background-color: #fff;
+   width: auto;
+   height: auto;
+   font-size: 1rem;
+   // margin-left: 20px;
+   color: #000;
+}
+
+.footer-col .social-links a:hover {
+   background-color: #000;
+   color: #fff;
+   padding: 15px;
+   border-radius: 50%;
+}
+
+@media screen and (max-width: 767px) {
+   .gridContainer {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: .5rem;
+      grid-row-gap: 2rem;
+      margin-top: 1.5rem;
+      margin-left: .5rem;
+      margin-right: .5rem;
+   }
+
+   
+
+   .overallContainer:hover {
+      text-decoration: none;
+      cursor: pointer;
+      opacity: unset;
+   }
+
+   .overallContainer:hover .shortMessage {
+      text-decoration: none;
+      visibility: hidden;
+   }
+
+   .footer-col .social-links a:hover {
+      background-color: #fff;
+      border-radius: 0;
+      color: #000;
+      padding: 0;
+   }
+   
+}
+
+@media screen and (min-width: 768px) and (max-width:968px){
+   .gridContainer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: .5rem;
+      grid-row-gap: 2rem;
+      margin-top: 1.5rem;
+      margin-left: .5rem;
+      margin-right: .5rem;
+   }
+
+   .overallContainer:hover {
+      text-decoration: none;
+      cursor: pointer;
+      opacity: unset;
+   }
+
+   .overallContainer:hover .shortMessage {
+      text-decoration: none;
+      visibility: hidden;
+   }
+
+   .footer-col .social-links a:hover {
+      background-color: #fff;
+      border-radius: 0;
+      color: #000;
+      padding: 0;
+   }
+
+}

@@ -1,11 +1,11 @@
 <div>
-   <section class="certificationContainer" [style]="styleContainer" id="content" >
+   <section class="certificationContainer" [ngClass]="mobileViewCerts" [style]="styleContainer" id="content" >
       <div>
          <div class="textContent" [style]="styleTextContent"  >
             <h1 >{{certificationDetails.name}}</h1>
             <h6 style="margin-top: 10px;">{{certificationDetails.description}}</h6>
             <div *ngIf="category != 'services'">
-            <button class="btn btn-primary btn-md" data-toggle="modal" style="background-color: #DC143C;color: #fff;margin-top: 10px;" (click)="open()">Enroll Now</button>
+            <button class="btn" data-toggle="modal" style="background-color: #DC143C;color: #fff;margin-top: 10px;" (click)="open()">Enroll Now</button>
          </div>
          </div>
       </div>
@@ -15,7 +15,7 @@
 
 
       
-      <div style="margin-top: 40px;color:#fff;width: 50%;" *ngIf="category != 'services'" >
+      <div class="offered" *ngIf="category != 'services'" >
          <h3>Offered By</h3>
          <h1>{{certificationDetails.offeredBy}}</h1>
       </div>

@@ -1,1 +1,22 @@
-<p>resource works!</p>
+   <!-- slide 4 -->
+   <section id="experts" class="slide4"  >
+      <h2 class="title" > OUR AMAZING TEAM </h2>
+      <div class="gridContainer"  >
+         <div *ngFor="let users of expertDetails" >
+          <div class="overallContainer"  >
+            <div class="photoContainer" >
+               <img class="photoStyle" [src]="users.imageUrl"  alt="ImageNotFound" />
+               <div class="nameBox" >
+                  <p class="name" >{{users.name}}</p>
+                  <p class="role">{{users.title}}</p>
+               </div>
+            </div>
+            <div class="footer-col">
+               <div *ngFor="let social of socialLinks" class="social-links">           
+                   <a [href]="social.link" target="_blank"  ><i  [ngClass]="social.icon"></i></a>
+               </div>
+           </div>
+         </div>
+      </div>
+      </div>
+   </section> 

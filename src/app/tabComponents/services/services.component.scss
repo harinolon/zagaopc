@@ -99,11 +99,37 @@
    .services__wrapper {
      grid-template-columns: 1fr 1fr;
    }
+
+   .services__card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+    height: 450px;
+    width: 340px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    //  background-image: linear-gradient(to bottom, #ed213a, #93291e);
+    background-image: linear-gradient(to bottom, #077f9dd9, #012121);
+    transition: none;
+   }
+
+   .services__card:hover {
+    cursor: pointer;
+    transform: none;
+    transition: none;
+  }
  }
  
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 767px) {
    .services__wrapper {
      grid-template-columns: 1fr;
+   }
+
+   h5 {
+    font-size: 16px;
    }
  }
  

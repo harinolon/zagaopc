@@ -47,8 +47,33 @@
 .modal
 {
    max-width: 80rem !important;
-    width: 150% !important;
+   width: 150% !important;
 }
-// .modal-dialog{
-//    width:150em !important;
-// }
+
+.offered {
+   margin-top: 40px;
+   color:#fff;
+   width: 50%;
+}
+
+@media  screen and (max-width: 767px){
+   .redhat-certs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+   }
+
+   .textContent {
+      width: 100%;
+      padding: 20px;
+   }
+
+   .offered {
+      margin-top: 0;
+      padding: 10px 10px 10px 20px;
+      width: 100%;
+   }   
+}
+

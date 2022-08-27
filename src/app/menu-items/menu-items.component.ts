@@ -45,7 +45,7 @@ export class MenuItemsComponent implements OnInit {
       enabled: true
     },
     {
-      name: 'Resource',
+      name: 'Resources',
       link: 'resource',
       enabled:true
     },
