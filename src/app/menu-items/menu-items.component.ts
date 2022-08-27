@@ -40,7 +40,7 @@ export class MenuItemsComponent implements OnInit {
       enabled: false
     },
     {
-      name: 'profile',
+      name: 'Profile',
       link: 'profile',
       enabled: true
     },

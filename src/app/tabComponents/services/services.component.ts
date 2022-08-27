@@ -11,7 +11,7 @@ export class ServicesComponent implements OnInit {
 
   servicesList = [
     {
-      name: 'Appliaction Modernization',
+      name: 'Application Modernization',
       description: 'Application Modernization values the existing functionality and reliability of the application that keeps the lights on as highly as any new capability.',
       imageUrl: '../../../assets/appmod.png',
       keyPoints: [
