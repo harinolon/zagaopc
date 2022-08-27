@@ -11,9 +11,13 @@
 
  .containermenu {
   display: flex;
+<<<<<<< HEAD
   //text-indent: -1em;
+=======
+  position: sticky;
+  //text-indent: -3em;
+>>>>>>> cd9431362fff4ca6de037b40d5e818302c355105
   //flex-direction: row;
-  // justify-content:flex-end;
   height: 60px;
 }
 
@@ -45,7 +49,7 @@
 //  }
 
 .listStyle {
-  margin: 10px 5px 20px 150px;
+  margin: 10px 5px 20px 75px;
   text-decoration-line: none;
   font-size: 1.2rem;
   color: #f8f2f3;
@@ -119,6 +123,7 @@
   .listStyle:hover {
     border-bottom: 0;
   }
+<<<<<<< HEAD
 }
 
 @media screen and (min-width: 768px) and (max-width: 770px) {
@@ -175,4 +180,7 @@
   .listStyle:hover {
     border-bottom: 0;
   }
+=======
+  
+>>>>>>> cd9431362fff4ca6de037b40d5e818302c355105
 }

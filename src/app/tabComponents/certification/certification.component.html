@@ -4,7 +4,9 @@
          <div class="textContent" [style]="styleTextContent"  >
             <h1 >{{certificationDetails.name}}</h1>
             <h6 style="margin-top: 10px;">{{certificationDetails.description}}</h6>
+            <div *ngIf="category != 'services'">
             <button class="btn btn-primary btn-md" data-toggle="modal" style="background-color: #DC143C;color: #fff;margin-top: 10px;" (click)="open()">Enroll Now</button>
+         </div>
          </div>
       </div>
 
