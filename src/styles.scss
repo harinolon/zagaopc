@@ -28,7 +28,7 @@ body, html {
   // -moz-osx-font-smoothing: grayscale;
  }
  
-.bg {
+ .bg {
   // width: 95%;
   // height: 700px;
   // padding-Top: 75px;
@@ -40,6 +40,7 @@ body, html {
   display: table-cell;
   vertical-align: middle;
 }
+
 
 img {
   max-width: 100%;
@@ -60,3 +61,11 @@ img {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+@media screen and (min-width: 768px) {
+   body, html {
+      width: 100%;
+      height: 100%;
+   }
+}

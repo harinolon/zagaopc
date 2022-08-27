@@ -52,7 +52,12 @@ export class AboutComponent implements OnInit {
       "name": "LinkedIn",
       "link": "https://www.linkedin.com/",
       "icon": "fab fa-linkedin-in"
-    }
+    },
+    {
+      "name": "Twitter",
+      "link": "https://twitter.com/",
+      "icon": "fab fa-twitter"
+    },
   ]
 
   managementTeam:any =  [
