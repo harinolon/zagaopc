@@ -68,25 +68,25 @@
    transition: 0.3s ease-in-out;
 }
 
-.overallContainer .shortMessage {
-   z-index: 1;
-   position: absolute;
-   visibility: hidden;
-}
+// .overallContainer .shortMessage {
+//    z-index: 1;
+//    position: absolute;
+//    visibility: hidden;
+// }
 
-.overallContainer:hover {
-   text-decoration: none;
-   color: green;
-   opacity: 0.5;
-   cursor: pointer;  
-}
+// .overallContainer:hover {
+//    text-decoration: none;
+//    color: green;
+//    opacity: 0.5;
+//    cursor: pointer;  
+// }
 
-.overallContainer:hover .shortMessage {
-   visibility: visible;
-   color: #fff;
-   background-color: #000;
-   padding: 10px;
-}
+// .overallContainer:hover .shortMessage {
+//    visibility: visible;
+//    color: #fff;
+//    background-color: #000;
+//    padding: 10px;
+// }
 
 
 
@@ -131,7 +131,8 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-top: 80px;
+   margin-top: 30px;
+   margin-bottom: 30px;
    padding: 0 15px;
 }
 

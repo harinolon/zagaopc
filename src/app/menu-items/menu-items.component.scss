@@ -7,6 +7,15 @@
   //  text-align: left;
  }
 
+ .wholeContainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+
+ .navbar {
+  position: sticky;
+ }
 
 
  .containermenu {
@@ -46,7 +55,7 @@
 //  }
 
 .listStyle {
-  margin: 15px 5px 15px 125px;
+  margin: 15px 5px 15px 90px;
   text-decoration-line: none;
   font-size: 1.2rem;
   color: #f8f2f3;

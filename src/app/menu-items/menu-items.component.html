@@ -10,12 +10,7 @@
 <!-- style="width: 100%; background-color: grey;" [ngClass]="navClass" -->
 
 
-      <div class="container-fluid">
-             <img src="../../assets/zagalogouncropped.png" alt="noImageFound" class="logoStyle" >
-             <a  class="icon" (click)="onHandleService()">
-                <i class="fa fa-bars"></i>
-              </a>
-      </div>
+      
       
 
 
@@ -35,15 +30,19 @@
             </div>
         </nav>
       </div> -->
-      <div>
-        <nav class="navbar navbar-expand-sm sticky-top navbar-dark" [ngClass]="navClass1" style="background-color: #101010d9;">
-            <div class="containermenu">
-                
-                <a class="listStyle" *ngFor="let list of menuList1" [routerLink]="[list.link]" (click)="onHandleService()">{{list.name}}</a>
-               
+        <div class="container-fluid">
+            <img src="../../assets/zagalogouncropped.png" alt="noImageFound" class="logoStyle" >
+            <a  class="icon" (click)="onHandleService()">
+               <i class="fa fa-bars"></i>
+             </a>
             </div>
-        </nav>
-    </div>
+            <nav class="navbar navbar-expand-sm fixed-top navbar-dark"  [ngClass]="navClass1" style="background-color: #101010d9;">
+                <div class="containermenu">
+                    
+                    <a class="listStyle" *ngFor="let list of menuList1" [routerLink]="[list.link]" (click)="onHandleService()">{{list.name}}</a>
+                   
+                </div>
+            </nav>
 
   <!-- Replace this with your own logo -->
           <!-- Toggler/collapsibe Button for small screens -->

@@ -63,25 +63,25 @@ export class AboutComponent implements OnInit {
   managementTeam:any =  [
     {
       "name": "VASANTHA LAKSHMI",
-      "title": "CEO",
+      "title": "ChIEF EXECUTIVE OFFICER",
       "linkedInUrl": "https://www.linkedin.com/in/johndoe/",
       "imageUrl": "../../../assets/pexels-pixabay-60504.jpg",
     },
     {
       "name": "Dr.VIJAYARANGAN",
-      "title": "CAO",
+      "title": "CHIEF ADVISORY OFFICER",
       "linkedInUrl": "https://www.linkedin.com/in/hariharan-p-0b32a51b0/",
       "imageUrl": "../../../assets/pexels-pixabay-60504.jpg",
     },
     {
       "name": "GIRIDHARAN",
-      "title": "MD",
+      "title": "MANAGING DIRECTOR",
       "linkedInUrl": "https://www.linkedin.com/in/johndoe/",
       "imageUrl": "../../../assets/pexels-pixabay-60504.jpg",
     },
     {
       "name": "CLYDE TEDRICK",
-      "title": "CTE - USA",
+      "title": "CHIEF TECHNOLOGY EVANGELIST - USA",
       "linkedInUrl": "https://www.linkedin.com/in/johndoe/",
       "imageUrl": "../../../assets/pexels-pixabay-60504.jpg",
     },

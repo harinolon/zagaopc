@@ -31,6 +31,10 @@
    justify-content: space-evenly;
 }
 
+.boxContainerText {
+   width: 30%;
+}
+
 .whiteBox {
    background-color: #fff;
    border-radius: 8px;
@@ -44,4 +48,131 @@
    flex-direction: row;
    justify-content: center;
    align-items: center;
+}
+
+.heading1 {
+   padding-bottom: 70px;
+}
+
+.heading2 {
+   margin-top: -15px;
+}
+
+.heading3 {
+   margin-top: 30px;
+}
+
+#mailIcon {
+   margin-right: 10px;
+   margin-top: 3px;
+   font-size: 20px;
+}
+
+.firstname {
+   width: 30%;
+   margin: 5% 0 3% 10%
+}
+
+.lastname {
+   width: 30%;
+   margin-left: 10%;
+}
+
+.email {
+   width: 60%;
+   margin-left: 10%;
+}
+
+.messagebox {
+   width: 60%;
+   margin: 3% 0 3% 10%
+}
+
+.savebtn {
+   width:30%;
+   margin-left: 30%;
+   font-size: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+
+   .contactContainer {
+      padding: 25px;
+      background-color: #E0FFFF;
+      height: auto;
+   }
+
+   .boxContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .boxContainerText {
+      width: 100%
+   }
+
+   .heading1 {
+      padding-bottom: 35px;
+   }
+
+   .heading2 {
+      margin-top: -7px;
+   }
+
+   .heading3 {
+      margin-top: 10px;
+   }
+
+   .whiteBox {
+      background-color: #fff;
+      border-radius: 8px;
+      margin-top: 20px;
+      width: 100%;
+   }
+
+   .firstname {
+      width: 100%;
+      margin: 5%;
+      margin-left: 0;
+   }
+
+   .lastname {
+      width: 100%;
+      margin: 5%;
+      margin-left: 0;
+   }
+
+   .email {
+      width: 100%;
+      margin: 5%;
+      margin-left: 0;
+   }
+
+   .messagebox {
+      width: 100%;
+      margin: 5%;
+      margin-left: 0;
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+   .contactContainer {
+      padding: 40px;
+   }
+   
+   .boxContainerText {
+      margin-right: 40px;
+   }
+
+   .firstname {
+      width: 35%;
+      margin: 5% 0 3% 10%
+   }
+   
+   .lastname {
+      width: 35%;
+      margin-left: 10%;
+   }
 }

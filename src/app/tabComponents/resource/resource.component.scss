@@ -45,19 +45,14 @@
 }
 
 .photoStyle {
-   height: 400px;
-   width: 300px;
+   height: 300px;
+   width: 200px;
    object-fit: cover;
+   // overflow: hidden;
    border-radius: 2px;
 }
 
 .name {
-   // width: 200px;
-   // height: 80px;
-   // display: flex;
-   // justify-content: center;
-   // align-items: center;
-   // background-color: #fff;
    margin-top: 20px;
    font-size: 1.4rem;
    font-weight: 500;

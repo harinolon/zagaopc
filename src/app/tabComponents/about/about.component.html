@@ -39,7 +39,7 @@
    <section class="slide4"  >
       <h2 class="heading1" >OUR MANAGEMENT TEAM</h2>
       <div class="gridContainer" >
-         <a class="overallContainer" *ngFor="let users of managementTeam" [href]="users.linkedInUrl" target="_blank" >
+         <div class="overallContainer" *ngFor="let users of managementTeam"  target="_blank" >
             <div class="photoContainer" >
                <img class="photoStyle" [src]="users.imageUrl"  alt="ImageNotFound" />
                <div class="nameBox" >
@@ -48,12 +48,17 @@
             </div>
             <p class="role" >{{users.title}}</p>
             <!-- <span class="shortMessage" >View LinkedIn Page</span> -->
-         </a>
+            <div class="footer-col">
+               <div *ngFor="let social of socialLinks" class="social-links">           
+                   <a [href]="users.linkedInUrl" target="_blank"  ><i  [ngClass]="social.icon"></i></a>
+               </div>
+           </div>
+         </div>
       </div>
    </section>
 
    <!-- slide 4 -->
-   <section id="experts" class="slide4"  >
+   <!-- <section id="experts" class="slide4"  >
       <h2>OUR DEVELOPMENT EXPERTS</h2>
       <div class="gridContainer" >
          <div *ngFor="let users of expertDetails" >
@@ -64,12 +69,6 @@
                   <h2 class="name" >{{users.name}}</h2>
                </div>
             </div>
-            
-            <!-- <p class="role" > -->
-               
-            <!-- {{socialLinks.title}} -->
-<!-- </p> -->
-            <!-- <span class="shortMessage" >View LinkedIn Page</span> -->
          </a>
          <div class="footer-col">
             <div *ngFor="let social of socialLinks" class="social-links">           
@@ -78,5 +77,5 @@
         </div>
       </div>
    </div>
-</section>
+</section> -->
 </div>

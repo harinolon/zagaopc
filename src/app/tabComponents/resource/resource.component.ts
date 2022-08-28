@@ -52,7 +52,7 @@ export class ResourceComponent implements OnInit {
       "name": "SHARANYA",
       "title": "SENIOR SOFTWARE DEVELOPER",
       "linkedInUrl": "https://www.linkedin.com/in/sharanya-sekar-3a7175231",
-      "imageUrl": "../../../assets/pexels-pixabay-60504.jpg",
+      "imageUrl": "../../../assets/sha.jpeg",
       "icon": "fab fa-linkedin-in"
     },
   ]
