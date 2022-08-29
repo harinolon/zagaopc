@@ -11,6 +11,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -70,6 +71,7 @@ import { ProfileComponent } from './tabComponents/profile/profile.component';
     HttpClientModule,
     MatSnackBarModule,
     MdbModalModule,
+    MatProgressSpinnerModule
   ],
   providers: [MenuItemsComponent],
   bootstrap: [AppComponent]

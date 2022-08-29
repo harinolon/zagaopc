@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiServicesService } from 'src/app/apiServices/api-services.service';
 
 @Component({
   selector: 'app-resource',
@@ -7,10 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResourceComponent implements OnInit {
 
-  constructor() { }
+  constructor(private apiCall:ApiServicesService) { }
 
-  ngOnInit(): void {
-  }
+ 
 
   expertDetails:any = [
     {
@@ -56,6 +56,8 @@ export class ResourceComponent implements OnInit {
       "icon": "fab fa-linkedin-in"
     },
   ]
+  // expertDetails:any = [];
+  // spinnerStatus: boolean = false;
   socialLinks:any = [
     {
       "name": "LinkedIn",
@@ -63,5 +65,13 @@ export class ResourceComponent implements OnInit {
       "icon": "fab fa-linkedin-in"
     }
   ]
+
+  ngOnInit(): void {
+    // this.apiCall.getMenuList("developmentTeam", "ZagaInformation").subscribe(
+    //   (data:any) => {
+    //      this.spinnerStatus = true;
+    //      this.expertDetails = data.teamDetails;
+    //   });
+  }
 
 }

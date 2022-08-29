@@ -11,6 +11,14 @@
     justify-content: center;
 }
 
+.spinner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+ }
+
 .rightProfile {
     display: flex;
     flex-direction: row;
@@ -47,6 +55,8 @@
         justify-content: center;
     }
 
+    
+     
     .imgStyle {
         width: auto;
         height: auto;
