@@ -11,36 +11,36 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 export class ContactComponent implements OnInit {
 
   contactForm: FormGroup;
-  address:any = [
-    {
-      address: "Zaga Open Source Pvt. Ltd.",
-    },
-    {
-      address: "Zaga Open Source Pvt. Ltd.",
-    }
-  ];
-  phoneNumbers:any = [
-    {
-      phone: "+91-9888888888",
-    },
-    {
-      phone: "+91-9888888888",
-    }
-  ];
-  emails:any = [
-    {
-      email: "contact@zagaopensource.com",
-    },
-    {
-      email: "contact@zagaopensource.com",
-    }
-  ];
-  shortMessage: any = "Our cordial welcome goes to you! Thank you for trusting us and appreciating our venture!";
+  // address:any = [
+  //   {
+  //     address: "Zaga Open Source Pvt. Ltd.",
+  //   },
+  //   {
+  //     address: "Zaga Open Source Pvt. Ltd.",
+  //   }
+  // ];
+  // phoneNumbers:any = [
+  //   {
+  //     phone: "+91-9888888888",
+  //   },
+  //   {
+  //     phone: "+91-9888888888",
+  //   }
+  // ];
+  // emails:any = [
+  //   {
+  //     email: "contact@zagaopensource.com",
+  //   },
+  //   {
+  //     email: "contact@zagaopensource.com",
+  //   }
+  // ];
+  // shortMessage: any = "Our cordial welcome goes to you! Thank you for trusting us and appreciating our venture!";
   
-  // shortMessage:any = "";
-  // address:any = [];
-  // phoneNumbers:any = [];
-  // emails:any = [];
+  shortMessage:any = "";
+  address:any = [];
+  phoneNumbers:any = [];
+  emails:any = [];
   
   constructor(
     private fb: FormBuilder,
@@ -57,24 +57,24 @@ export class ContactComponent implements OnInit {
    durationInSeconds = 5;
 
   ngOnInit(): void {
-    // this.apiCall.getMenuList("contact","ZagaInformation").subscribe((data:any) => {
-    //   this.shortMessage = data.Contact.shortMessage;
-    //   this.address = data.Contact.Address;
-    //   this.phoneNumbers = data.Contact.phoneNumber;
-    //   this.emails = data.Contact.email;
-    // });
+    this.apiCall.getMenuList("contact","ZagaInformation").subscribe((data:any) => {
+      this.shortMessage = data.Contact.shortMessage;
+      this.address = data.Contact.Address;
+      this.phoneNumbers = data.Contact.phoneNumber;
+      this.emails = data.Contact.email;
+    });
   }
 
   onSubmit() {
     console.log(this.contactForm.value);
-    // this.apiCall.sendMail(this.contactForm.value).subscribe((data:any) => {
-    //   console.log(data);
-    //   this.snackBar.open("Thank you for contacting us. We will get back to you soon!", "", {
-    //     duration: this.durationInSeconds * 1000});
-    //   this.contactForm.reset();
-    // }, (error) => {
-    //   console.log(error);
-    // });
+    this.apiCall.sendMail(this.contactForm.value).subscribe((data:any) => {
+      console.log(data);
+      this.snackBar.open("Thank you for contacting us. We will get back to you soon!", "", {
+        duration: this.durationInSeconds * 1000});
+      this.contactForm.reset();
+    }, (error) => {
+      console.log(error);
+    });
   }
 
 }

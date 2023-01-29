@@ -73,16 +73,16 @@ export class CertificationComponent implements OnInit {
   }
   
 
-  onSubmit() {
-    console.log(this.contactForm.value);
-    // this.apiCall.sendMail(this.contactForm.value).subscribe((data:any) => {
-    //   console.log(data);
-    //   this.snackBar.open("Thank you for contacting us. We will get back to you soon!", "", {
-    //     duration: this.durationInSeconds * 1000});
-    //   this.contactForm.reset();
-    // }, (error) => {
-    //   console.log(error);
-    // });
-  }
+  // onSubmit() {
+  //   console.log(this.contactForm.value);
+  //   this.apiCall.sendMail(this.contactForm.value).subscribe((data:any) => {
+  //     console.log(data);
+  //     this.snackBar.open("Thank you for contacting us. We will get back to you soon!", "", {
+  //       duration: this.durationInSeconds * 1000});
+  //     this.contactForm.reset();
+  //   }, (error) => {
+  //     console.log(error);
+  //   });
+  // }
 
 }

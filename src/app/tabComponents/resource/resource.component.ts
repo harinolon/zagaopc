@@ -12,66 +12,106 @@ export class ResourceComponent implements OnInit {
 
  
 
-  expertDetails:any = [
-    {
-      "name": "SURENDAR",
-      "title": "SENIOR SOFTWARE DEVELOPER",
-      "linkedInUrl": "https://www.linkedin.com/in/surendar-ramaraj-82ab78229",
-      "imageUrl": "../../../assets/pexels-pixabay-60504.jpg",
-      "icon": "fab fa-linkedin-in"
-    },
-    {
-      "name": "HARIHARAN",
-      "title": "SENIOR SOFTWARE DEVELOPER",
-      "linkedInUrl": "https://www.linkedin.com/in/hariharan-p-0b32a51b0/",
-      "imageUrl": "../../../assets/new.jpg",
-      "icon": "fab fa-linkedin-in"
-    },
-    {
-      "name": "MUKESH",
-      "title": "SENIOR SOFTWARE DEVELOPER",
-      "linkedInUrl": "https://www.linkedin.com/in/mukesh-kumar-1306s2707",
-      "imageUrl": "../../../assets/pexels-pixabay-60504.jpg",
-      "icon": "fab fa-linkedin-in"
-    },
-    {
-      "name": "JEYARAGHUL",
-      "title": "SENIOR SOFTWARE DEVELOPER",
-      "linkedInUrl": "https://www.linkedin.com/in/jeya-raghul-40b498152",
-      "imageUrl": "../../../assets/pexels-pixabay-60504.jpg",
-      "icon": "fab fa-linkedin-in"
-    },
-    {
-      "name": "ANUSHIYA",
-      "title": "SENIOR SOFTWARE DEVELOPER",
-      "linkedInUrl": "https://www.linkedin.com/in/anushiya-dhamu-5168071b7/",
-      "imageUrl": "../../../assets/pexels-pixabay-60504.jpg",
-      "icon": "fab fa-linkedin-in"
-    },
-    {
-      "name": "SHARANYA",
-      "title": "SENIOR SOFTWARE DEVELOPER",
-      "linkedInUrl": "https://www.linkedin.com/in/sharanya-sekar-3a7175231",
-      "imageUrl": "../../../assets/sha.jpeg",
-      "icon": "fab fa-linkedin-in"
-    },
-  ]
-  // expertDetails:any = [];
-  // spinnerStatus: boolean = false;
+  // expertDetails:any = [
+  //   {
+  //     "name": "SURENDAR",
+  //     "title": "SENIOR SOFTWARE DEVELOPER",
+  //     "imageUrl": "../../../assets/pexels-pixabay-60504.jpg",
+  //     "icon": "fab fa-linkedin-in",
+  //     "socialLinks": [
+  //       {
+  //         "name": "LinkedIn",
+  //         "link": "https://www.linkedin.com/",
+  //         "icon": "fab fa-linkedin-in"
+  //       }
+  //     ]
+  //   },
+  //   {
+  //     "name": "HARIHARAN",
+  //     "title": "SENIOR SOFTWARE DEVELOPER",
+  //     "imageUrl": "../../../assets/new.jpg",
+  //     "icon": "fab fa-linkedin-in",
+  //     "socialLinks": [
+  //       {
+  //         "name": "LinkedIn",
+  //         "link": "https://www.linkedin.com/in/hariharan-p-0b32a51b0/",
+  //         "icon": "fab fa-linkedin-in"
+  //       }
+  //     ]
+  //   },
+  //   {
+  //     "name": "MUKESH",
+  //     "title": "SENIOR SOFTWARE DEVELOPER",
+  //     "imageUrl": "../../../assets/pexels-pixabay-60504.jpg",
+  //     "icon": "fab fa-linkedin-in",
+  //     "socialLinks": [
+  //       {
+  //         "name": "LinkedIn",
+  //         "link": "https://www.linkedin.com/",
+  //         "icon": "fab fa-linkedin-in"
+  //       }
+  //     ]
+  //   },
+  //   {
+  //     "name": "JEYARAGHUL",
+  //     "title": "SENIOR SOFTWARE DEVELOPER",
+  //     "imageUrl": "../../../assets/pexels-pixabay-60504.jpg",
+  //     "icon": "fab fa-linkedin-in",
+  //     "socialLinks": [
+  //       {
+  //         "name": "LinkedIn",
+  //         "link": "https://www.linkedin.com/",
+  //         "icon": "fab fa-linkedin-in"
+  //       }
+  //     ]
+  //   },
+  //   {
+  //     "name": "ANUSHIYA",
+  //     "title": "SENIOR SOFTWARE DEVELOPER",
+  //     "imageUrl": "../../../assets/pexels-pixabay-60504.jpg",
+  //     "icon": "fab fa-linkedin-in",
+  //     "socialLinks": [
+  //       {
+  //         "name": "LinkedIn",
+  //         "link": "https://www.linkedin.com/",
+  //         "icon": "fab fa-linkedin-in"
+  //       }
+  //     ]
+  //   },
+  //   {
+  //     "name": "SHARANYA",
+  //     "title": "SENIOR SOFTWARE DEVELOPER",
+  //     "imageUrl": "../../../assets/sha.jpeg",
+  //     "icon": "fab fa-linkedin-in",
+  //     "socialLinks": [
+  //       {
+  //         "name": "LinkedIn",
+  //         "link": "https://www.linkedin.com/",
+  //         "icon": "fab fa-linkedin-in"
+  //       }
+  //     ]
+  //   },
+  // ]
+  expertDetails:any = [];
+  spinnerStatus: boolean = false;
   socialLinks:any = [
-    {
-      "name": "LinkedIn",
-      "link": "https://www.linkedin.com/",
-      "icon": "fab fa-linkedin-in"
-    }
+    // {
+    //   "name": "LinkedIn",
+    //   "link": "https://www.linkedin.com/",
+    //   "icon": "fab fa-linkedin-in"
+    // }
   ]
 
   ngOnInit(): void {
-    // this.apiCall.getMenuList("developmentTeam", "ZagaInformation").subscribe(
-    //   (data:any) => {
-    //      this.spinnerStatus = true;
-    //      this.expertDetails = data.teamDetails;
-    //   });
+    this.apiCall.getMenuList("developmentTeam", "ZagaInformation").subscribe(
+      (data:any) => {
+         this.spinnerStatus = true;
+         this.expertDetails = data.teamDetails;
+         for(let team=0; team<this.expertDetails.length; team++) {
+          console.log(this.expertDetails[team].socialLinks);
+          this.socialLinks = this.expertDetails[team].socialLinks;
+        }
+      });
   }
 
 }

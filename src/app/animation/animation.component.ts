@@ -15,7 +15,5 @@ export class AnimationComponent implements OnInit {
       this.route.navigate(["/certification"]);
   }, 2000);
   }
-
-  // message:any = 'Hello World';
-
+  
 }

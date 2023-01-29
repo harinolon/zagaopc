@@ -7,59 +7,60 @@ import { ApiServicesService } from '../apiServices/api-services.service';
   styleUrls: ['./menu-items.component.scss']
 })
 export class MenuItemsComponent implements OnInit {
-  // menuList:any = [];
-  menuList = [
-    {
-      name: 'Home',
-      link: '/',
-      enabled: true
-    },
-    {
-      name: 'About',
-      link: 'about',
-      enabled: true
-    },
-    {
-      name: 'Services',
-      link: 'services',
-      enabled: true
-    },
-    {
-      name: 'RedHatCertification',
-      link: 'redhatCerts',
-      enabled: true
-    },
-    {
-      name: 'Developer Training',
-      link: 'devTraining',
-      enabled: false
-    },
-    {
-      name: 'Portfolio',
-      link: 'portfolio',
-      enabled: false
-    },
-    {
-      name: 'Profile',
-      link: 'profile',
-      enabled: true
-    },
-    {
-      name: 'Resources',
-      link: 'resource',
-      enabled:true
-    },
-    {
-      name: 'Careers',
-      link: 'career',
-      enabled: false
-    },
-    {
-      name: 'Contact',
-      link: 'contact',
-      enabled: true
-    }
-  ];
+
+  // menuList = [
+  //   {
+  //     name: 'Home',
+  //     link: '/',
+  //     enabled: true
+  //   },
+  //   {
+  //     name: 'About',
+  //     link: 'about',
+  //     enabled: true
+  //   },
+  //   {
+  //     name: 'Services',
+  //     link: 'services',
+  //     enabled: true
+  //   },
+  //   {
+  //     name: 'RedHatCertification',
+  //     link: 'redhatCerts',
+  //     enabled: true
+  //   },
+  //   {
+  //     name: 'Developer Training',
+  //     link: 'devTraining',
+  //     enabled: false
+  //   },
+  //   {
+  //     name: 'Portfolio',
+  //     link: 'portfolio',
+  //     enabled: false
+  //   },
+  //   {
+  //     name: 'Profile',
+  //     link: 'profile',
+  //     enabled: true
+  //   },
+  //   {
+  //     name: 'Resources',
+  //     link: 'resource',
+  //     enabled:true
+  //   },
+  //   {
+  //     name: 'Careers',
+  //     link: 'career',
+  //     enabled: false
+  //   },
+  //   {
+  //     name: 'Contact',
+  //     link: 'contact',
+  //     enabled: true
+  //   }
+  // ];
+  menuList:any = [];
   menuList1:any = [];
   menuData:any;
   navClass1:any;
@@ -68,18 +69,18 @@ export class MenuItemsComponent implements OnInit {
   constructor(private api: ApiServicesService) { }
 
   ngOnInit(): void {
-    this.menuList.filter((item) => item.enabled).forEach(item => {
-      this.menuList1.push(item);
-    });
-
-    // this.api.getMenuList("menu","ZagaInformation").subscribe((data) => {
-    //   this.menuData = data;
-    //   this.menuList = this.menuData.Menu.menuList;
-    //   this.menuList.filter((item:any) => item.enabled).forEach((item:any) => {
-    //     this.menuList1.push(item);
-    //   });
-    //   console.log(this.menuList);
+    // this.menuList.filter((item) => item.enabled).forEach(item => {
+    //   this.menuList1.push(item);
     // });
+
+    this.api.getMenuList("menu","ZagaInformation").subscribe((data) => {
+      this.menuData = data;
+      this.menuList = this.menuData.Menu.menuList;
+      this.menuList.filter((item:any) => item.enabled).forEach((item:any) => {
+        this.menuList1.push(item);
+      });
+      console.log(this.menuList);
+    });
            
 
   }

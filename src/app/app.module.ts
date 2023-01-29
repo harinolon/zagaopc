@@ -73,7 +73,14 @@ import { ProfileComponent } from './tabComponents/profile/profile.component';
     MdbModalModule,
     MatProgressSpinnerModule
   ],
-  providers: [MenuItemsComponent],
+  // providers: [MenuItemsComponent],
+  providers: [MenuItemsComponent, {
+  provide: APP_INITIALIZER, 
+  useValue: () =>  new Promise(resolve =>
+    setTimeout(resolve, 3000)
+  ),
+  multi: true
+}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
