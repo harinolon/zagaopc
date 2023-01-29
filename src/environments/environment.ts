@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  url: 'https://us-east-1.aws.data.mongodb-api.com/app/application-0-wouft/endpoint/zaga/information',
+  mailUrl: 'https://us-east-1.aws.data.mongodb-api.com/app/application-0-wouft/endpoint/sendmail'
 };
 
 /*
