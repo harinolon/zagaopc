@@ -9,8 +9,8 @@ import { ApiServicesService } from '../apiServices/api-services.service';
 export class HomeComponent implements OnInit {
   slides:any = [
     { img: "../../assets/pexels-christina-morillo-1181244.jpg",
-      title: "First slide label",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      title: "Zaga Open source",
+      text: "Solutions provider founded by IT Industry exposed Technologists. We provide application modernization solutions for our clients and also offer training for students and working professionals to update their knowledge in IT field.",
       color: "#fff",
       enabled:true
     },
