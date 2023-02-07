@@ -1,4 +1,4 @@
-<div style="padding: 20px;" >
+<div style="padding: 20px;"  *ngIf="!spinnerStatus" >
    <!-- <section class="container" > -->
       <section class="firstContainer" >
          <div class="textContent" >
@@ -19,4 +19,7 @@
         </div>
       </div>
    <!-- </section> -->
+</div>
+<div class="spinner" *ngIf="spinnerStatus" >
+   <mat-spinner></mat-spinner>
 </div>

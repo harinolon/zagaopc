@@ -1,0 +1,78 @@
+<div style="padding: 20px;" *ngIf="!spinnerStatus" >
+   <div >
+   <section class="aboutContainer"  >
+      <div>
+         <img class="imgStyle1" src="{{about[0].img1}}" alt="ImageNotFound" />
+      </div>
+      <div class="textContent" >
+         <h2>{{about[0].heading1}}</h2>
+         <p>{{about[0].content1}}
+         </p>
+      </div>
+   </section>
+   
+   <!-- slide 2 -->
+   <section class="aboutContainer" >
+      <div class="textContent" >
+         <h2>{{about[1].heading2}}</h2>
+         <p>{{about[1].content2}}
+         </p>
+      </div>
+      <div>
+         <img class="imgStyle2" src="{{about[1].img2}}" alt="ImageNotFound" />
+      </div>
+   </section>
+   
+   <!-- slide 3 -->
+   <section class="aboutContainer" >
+      <div>
+         <img class="imgStyle3" src="{{about[2].img3}}" alt="ImageNotFound" />
+      </div>
+      <div class="textContent" >
+         <h2>{{about[2].heading3}}</h2>
+         <p>{{about[2].content3}}
+         </p>
+      </div>
+   </section>
+
+   <!-- slide 4 -->
+   <section class="aboutContainer" >
+      <div class="textContent" >
+         <h2>{{about[3].heading4}}</h2>
+         <p *ngFor="let content of about[3].content4" >{{content}}
+         </p>
+      </div>
+      <div>
+         <img class="imgStyle3" src="{{about[3].img4}}" alt="ImageNotFound" />
+      </div>
+   </section>
+
+   <!-- slide 5 -->
+   <section class="aboutContainer" >
+      <div>
+         <img class="imgStyle3" src="{{about[4].img5}}" alt="ImageNotFound" />
+      </div>
+      <div class="textContent" >
+         <h2>{{about[4].heading5}}</h2>
+         <p>{{about[4].content5}}
+         </p>
+      </div>
+   </section>
+
+   <!-- slide 6 -->
+   <section class="aboutContainer" >
+      <div class="textContent" >
+         <h2>{{about[5].heading6}}</h2>
+         <p>{{about[5].content6}}
+         </p>
+      </div>
+      <div>
+         <img class="imgStyle3" src="{{about[5].img6}}" alt="ImageNotFound" />
+      </div>
+   </section>
+
+</div>
+</div>
+<div class="spinner" *ngIf="spinnerStatus" >
+   <mat-spinner></mat-spinner>
+</div>

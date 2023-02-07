@@ -12,6 +12,9 @@ import { RedhatCertsComponent } from './tabComponents/redhat-certs/redhat-certs.
 import { ServicesComponent } from './tabComponents/services/services.component';
 import { ProfileComponent } from './tabComponents/profile/profile.component';
 import { ResourceComponent } from './tabComponents/resource/resource.component';
+import { OurCompanyComponent } from './tabComponents/our-company/our-company.component';
+import { ManagementTeamComponent } from './tabComponents/management-team/management-team.component';
+import { DevopsComponent } from './tabComponents/devops/devops.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -25,7 +28,10 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'animation', component: AnimationComponent },
   { path: 'profile', component: ProfileComponent},
-  { path: 'resource', component: ResourceComponent }
+  { path: 'resource', component: ResourceComponent },
+  { path: 'ourCompany', component: OurCompanyComponent},
+  { path: 'managementTeam', component: ManagementTeamComponent},
+  { path: 'devops', component: DevopsComponent}
 ];
 
 @NgModule({

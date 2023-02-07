@@ -7,6 +7,7 @@ import { ApiServicesService } from '../apiServices/api-services.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  spinnerStatus: boolean = true;
   slides:any = [
     { img: "../../assets/pexels-christina-morillo-1181244.jpg",
       title: "Zaga Open source",
@@ -45,6 +46,7 @@ export class HomeComponent implements OnInit {
       this.getData.forEach((item:any) => {
         this.slides = [...this.slides, item];
       });
+      this.spinnerStatus = false;
       console.log(this.slides);
     });
   }

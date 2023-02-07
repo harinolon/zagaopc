@@ -1,0 +1,16 @@
+<div class="services"  *ngIf="!spinnerStatus" >
+   <h1 class="heading" >DevOps</h1>
+   <!-- <h5 style="color: #000;" >Develop ~ Test ~ Deploy</h5> -->
+   <div class="services__wrapper">
+        <a class="services__card" *ngFor="let services of servicesList" (click)="onHandleService(services)" >
+            <h2  >{{services.name}}</h2>
+            <div class="imageContainer" ><img class="photoStyle" [src]="services.imageUrl" alt=""></div>
+            <p>{{services.description}}</p>
+            <!-- <div class="services__btn"><button>Get Started</button></div> -->
+        </a>
+   </div>
+   <!-- <app-animation *ngIf="!animation" ></app-animation> -->
+</div>
+<div class="spinner" *ngIf="spinnerStatus" >
+   <mat-spinner></mat-spinner>
+</div>

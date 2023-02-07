@@ -38,10 +38,37 @@
              </a>
         </div>
         <nav class="navbar navbar-expand-sm fixed-top navbar-dark"  [ngClass]="navClass1" style="background-color: #101010d9;">
-                <div class="containermenu">
-                    <a class="listStyle" *ngFor="let list of menuList1" [routerLink]="[list.link]" (click)="onHandleService()">{{list.name}}</a>
-                </div>
-        </nav>
+                <div class="containermenu" *ngFor="let list of menuList1" >
+                    <a class="listStyle" *ngIf="!list.subListEnabled" [routerLink]="[list.link]" (click)="onHandleService()">{{list.name}}</a>
+                        <a class="listStyle" style="color: white;" *ngIf="list.subListEnabled" [matMenuTriggerFor]="menu" >{{list.name}}
+                            <mat-menu #menu="matMenu"  >
+                                <div *ngFor="let node of list.subList; let i = index" >
+                                <ng-container  >
+                                  <a mat-menu-item [routerLink]="[node.link]" (click)="onHandleService()" >
+                                    {{node.name}}
+                                  </a>
+                                </ng-container>
+                            </div>
+                            </mat-menu>
+                        </a>
+                    </div>
+                </nav>
+
+        
+<!-- src/app/menu/menu.component.html -->
+
+<!-- <button mat-button *ngIf="list.subListEnabled" ? [matMenuTriggerFor]="menu" : none>
+  Profile
+</button>
+<div *ngIf="list.subListEnabled" >
+    <mat-menu #menu="matMenu">
+        <ng-container *ngFor="let node of menuSubList; let i = index">
+          <button mat-menu-item>
+            {{node}}
+          </button>
+        </ng-container>
+      </mat-menu>
+</div> -->
 
   <!-- Replace this with your own logo -->
           <!-- Toggler/collapsibe Button for small screens -->

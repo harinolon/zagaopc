@@ -41,7 +41,8 @@ export class ContactComponent implements OnInit {
   address:any = [];
   phoneNumbers:any = [];
   emails:any = [];
-  
+  spinnerStatus: boolean = true;
+
   constructor(
     private fb: FormBuilder,
     private apiCall: ApiServicesService,
@@ -62,6 +63,7 @@ export class ContactComponent implements OnInit {
       this.address = data.Contact.Address;
       this.phoneNumbers = data.Contact.phoneNumber;
       this.emails = data.Contact.email;
+      this.spinnerStatus = false;
     });
   }
 

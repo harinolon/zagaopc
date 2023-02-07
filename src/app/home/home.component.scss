@@ -7,6 +7,14 @@
 //    transform: translate(-50%, -50%);
 //  }
 
+.spinner {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 70px;
+}
+
 .title {
    font-size: 80px;
    font-weight: bold;

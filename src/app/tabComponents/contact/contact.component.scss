@@ -10,6 +10,14 @@
    margin-top: 10px;
 }
 
+.spinner {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 70px;
+}
+
 .imgStyle {
    height: 40px;
    width: 60px;

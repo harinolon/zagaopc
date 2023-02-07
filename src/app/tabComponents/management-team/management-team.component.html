@@ -1,0 +1,23 @@
+<section class="slide4" *ngIf="!spinnerStatus" >
+   <h2 class="heading1" >OUR MANAGEMENT TEAM</h2>
+   <div class="gridContainer" >
+      <div class="overallContainer" *ngFor="let users of managementTeam"  target="_blank" >
+         <div class="photoContainer" >
+            <img class="photoStyle" [src]="users.imageUrl"  alt="ImageNotFound" />
+            <div class="nameBox" >
+               <h2 class="name" >{{users.name}}</h2>
+            </div>
+         </div>
+         <p class="role" >{{users.title}}</p>
+         <!-- <span class="shortMessage" >View LinkedIn Page</span> -->
+         <div class="footer-col">
+            <div *ngFor="let social of socialLinks" class="social-links">           
+                <a [href]="social.link" target="_blank"  ><i  [ngClass]="social.icon"></i></a>
+            </div>
+        </div>
+      </div>
+   </div>
+</section>
+<div class="spinner" *ngIf="spinnerStatus" >
+   <mat-spinner></mat-spinner>
+</div>

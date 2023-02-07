@@ -121,7 +121,7 @@ export class ServicesComponent implements OnInit {
   // ];
 
   servicesList:any = [];
-
+  spinnerStatus: boolean = true;
   
 
   constructor(private apiCall:ApiServicesService,private route:Router) { }
@@ -130,6 +130,7 @@ export class ServicesComponent implements OnInit {
     this.apiCall.getMenuList("services", "ZagaInformation").subscribe(
       (data:any) => {
         this.servicesList = data.servicesList;
+        this.spinnerStatus = false;
       });
   }
 

@@ -101,7 +101,7 @@ export class RedhatCertsComponent implements OnInit {
   //   },
   // ];
   servicesList:any = [];
-  
+  spinnerStatus: boolean = true;
 
 
   constructor(private apiCall:ApiServicesService,private route:Router) { }
@@ -110,6 +110,7 @@ export class RedhatCertsComponent implements OnInit {
     this.apiCall.getMenuList("redhatCerts", "ZagaInformation").subscribe(
       (data:any) => {
         this.servicesList = data.servicesList;
+        this.spinnerStatus = false;
       });
   }
 

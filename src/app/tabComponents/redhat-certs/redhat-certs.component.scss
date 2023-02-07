@@ -8,6 +8,14 @@
    padding: 3rem;
 }
 
+.spinner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+}
+
 .imgStyle3 {
    width: 450px;
    height: 450px;

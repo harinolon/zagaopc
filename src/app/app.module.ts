@@ -12,7 +12,7 @@ import { MatCardModule } from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-
+import {MatMenuModule} from '@angular/material/menu';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,6 +33,9 @@ import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
 import { ContactModalComponent } from './tabComponents/certification/contact-modal/contact-modal.component';
 import { ResourceComponent } from './tabComponents/resource/resource.component';
 import { ProfileComponent } from './tabComponents/profile/profile.component';
+import { OurCompanyComponent } from './tabComponents/our-company/our-company.component';
+import { ManagementTeamComponent } from './tabComponents/management-team/management-team.component';
+import { DevopsComponent } from './tabComponents/devops/devops.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +54,10 @@ import { ProfileComponent } from './tabComponents/profile/profile.component';
     AnimationComponent,
     ContactModalComponent,
     ResourceComponent,
-    ProfileComponent
+    ProfileComponent,
+    OurCompanyComponent,
+    ManagementTeamComponent,
+    DevopsComponent
   ],
   imports: [
     BrowserModule,
@@ -71,16 +77,17 @@ import { ProfileComponent } from './tabComponents/profile/profile.component';
     HttpClientModule,
     MatSnackBarModule,
     MdbModalModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatMenuModule
   ],
   // providers: [MenuItemsComponent],
   providers: [MenuItemsComponent, {
-  provide: APP_INITIALIZER, 
-  useValue: () =>  new Promise(resolve =>
-    setTimeout(resolve, 3000)
-  ),
-  multi: true
-}],
+    provide: APP_INITIALIZER, 
+    useValue: () =>  new Promise(resolve =>
+      setTimeout(resolve, 3000)
+    ),
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
@@ -91,3 +98,4 @@ export class AppModule { }
 //   ),
 //   multi: true
 // }],
+

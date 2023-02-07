@@ -12,6 +12,14 @@
    width: 225px;
 }
 
+.spinner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+}
+
  .photoStyle {
    margin-top: 20px;
    object-fit: cover;
