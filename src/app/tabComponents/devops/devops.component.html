@@ -1,5 +1,14 @@
 <div class="services"  *ngIf="!spinnerStatus" >
-   <h1 class="heading" >DevOps</h1>
+   <!-- <h1 class="heading" >DevOps</h1> -->
+   <section class="firstContainer" >
+      <div class="textContent" >
+         <h3 style="color: red;" >DEVOPS</h3>
+         <h5 style="color: black;" >The Deployment, configuration, monitoring, and management of applications. So they can work on rapidly changing systems, fix bugs, and help shorten the systems development life cycle and provide continuous delivery with high software quality.</h5>
+      </div>
+      <div>
+         <img class="imgStyle3" src="../../../assets/cicd.svg" alt="ImageNotFound" />
+      </div>
+   </section>
    <!-- <h5 style="color: #000;" >Develop ~ Test ~ Deploy</h5> -->
    <div class="services__wrapper">
         <a class="services__card" *ngFor="let services of servicesList" (click)="onHandleService(services)" >

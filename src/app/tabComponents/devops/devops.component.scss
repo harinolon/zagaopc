@@ -143,3 +143,75 @@
    }
  }
  
+
+
+//  redhat certs stylings
+
+
+.firstContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 3rem;
+}
+
+.spinner {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding: 70px;
+}
+
+.imgStyle3 {
+  width: 450px;
+  height: 450px;
+  padding-top: 50px;
+ //  margin-left: 60px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.textContent {
+  width: 50%;
+  padding: 20px;
+}
+
+//Second Container
+
+
+
+@media screen and (max-width: 767px) {
+
+
+  .firstContainer {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 0;
+  }
+
+  .textContent {
+    width: 100%;
+  }
+
+  .imgStyle3 {
+   width: auto;
+   height: auto;
+   padding: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+   .firstContainer {
+     padding: 0;
+  }
+
+   .imgStyle3 {
+     width: auto;
+     height: auto;
+     padding: 50px;
+    }
+
+}
